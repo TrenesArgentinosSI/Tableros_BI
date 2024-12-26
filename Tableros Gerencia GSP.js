@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Tableros Gerencia GSP
 // @namespace    http://tampermonkey.net/
-// @version      1.16
+// @version      1.17
 // @description  Rotar enlaces con opción de pausa y reanudación mediante botones visibles, con contador de tiempo fluido.
 // @author       Tú
 // @match        https://app.powerbi.com/*
@@ -32,7 +32,7 @@
     // Configuración del tiempo (modificable)
     const rotationTime = {
         seconds: 0,
-        minutes: 5,
+        minutes: 1,
         hours: 0
     };
 
