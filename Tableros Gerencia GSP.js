@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Tableros Gerencia GSP
 // @namespace    http://tampermonkey.net/
-// @version      1.13
+// @version      1.14
 // @description  Rotar enlaces con opción de pausa y reanudación mediante botones visibles, con contador de tiempo fluido.
 // @author       Tú
 // @match        https://app.powerbi.com/*
@@ -12,14 +12,14 @@
     'use strict';
 
     const links = [
-"https://app.powerbi.com/links/Ma76FMCl7w?ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&pbi_source=linkShare&bookmarkGuid=25945810-27a5-424d-abe3-170829e396f9?experience=power-bi&chromeless=true",
-        "https://app.powerbi.com/links/zK1Wg0oyeE?ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&pbi_source=linkShare&bookmarkGuid=9667169b-d46c-4cf1-b045-354ac011ade8?experience=power-bi&chromeless=true",
-        "https://app.powerbi.com/links/JDVlq5w5Om?ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&pbi_source=linkShare&bookmarkGuid=866bb75a-f0dc-41f2-8a56-f7dbaac24f41?experience=power-bi&chromeless=true",
+"https://app.powerbi.com/groups/me/reports/7e9d3785-efd4-4ba6-86b2-e6890eaf9efc/ReportSection?ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&chromeless=true&experience=power-bi",
+        "https://app.powerbi.com/groups/me/reports/e57e4ee0-214f-4a7e-b2ca-6a065f8f0c55/ReportSection?ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&chromeless=true&experience=power-bi",
+        "https://app.powerbi.com/groups/me/reports/5098770c-9cd5-45f4-a997-c95ce6311a67/3f59c63e62ec2e696753?ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&chromeless=true&experience=power-bi",
         "https://app.powerbi.com/links/3Oq9_0RLzY?ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&pbi_source=linkShare?experience=power-bi&chromeless=true",
-        "https://app.powerbi.com/links/zk_fpsVM1Y?ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&pbi_source=linkShare&bookmarkGuid=c36b4544-9896-47b9-bd07-2971663a00fa?experience=power-bi&chromeless=true",
-        "https://app.powerbi.com/links/GQsWlyo_kh?ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&pbi_source=linkShare?experience=power-bi&chromeless=true"
+        "https://app.powerbi.com/groups/me/reports/3d207542-1bcb-4557-a2e1-4a195a66ebef/ReportSection?ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&chromeless=true&experience=power-bi",
+        "https://app.powerbi.com/groups/me/reports/88b3d9cb-4e34-46b3-8f05-4e2776595a03/ReportSection598b87c7344b73973402?ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&chromeless=true&experience=power-bi"
         ];
-// URLs permitidas
+// URLs 
 
     // Verificar si la URL actual está en la lista de URLs permitidas
     const currentUrl = window.location.href;
