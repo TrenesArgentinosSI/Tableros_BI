@@ -5,8 +5,8 @@
 // @description  Rotar enlaces con opción de pausa y reanudación mediante botones visibles, con contador de tiempo fluido.
 // @author       Tú
 // @match        https://app.powerbi.com/*
-// @updateURL   https://github.com/TrenesArgentinosSI/Tableros_BI/raw/refs/heads/main/Tableros%20Presidencia-1.10.user.js
-// @downloadURL  https://github.com/TrenesArgentinosSI/Tableros_BI/raw/refs/heads/main/Tableros%20Presidencia-1.10.user.js
+// @updateURL   https://github.com/TrenesArgentinosSI/Tableros_BI/raw/refs/heads/main/Tableros%20Presidencia.js
+// @downloadURL  https://github.com/TrenesArgentinosSI/Tableros_BI/raw/refs/heads/main/Tableros%20Presidencia.js
 // ==/UserScript==
 (function() {
     'use strict';
