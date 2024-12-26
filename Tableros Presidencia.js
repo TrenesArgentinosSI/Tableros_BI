@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Tableros Presidencia
 // @namespace    http://tampermonkey.net/
-// @version      1.12
+// @version      1.13
 // @description  Rotar enlaces con opción de pausa y reanudación mediante botones visibles, con contador de tiempo fluido.
 // @author       Tú
 // @match        https://app.powerbi.com/*
@@ -31,7 +31,7 @@
     // Configuración del tiempo (modificable)
     const rotationTime = {
         seconds: 0,
-        minutes: 5,
+        minutes: 2,
         hours: 0
     };
 
