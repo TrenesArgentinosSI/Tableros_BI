@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Tableros SI
 // @namespace    http://tampermonkey.net/
-// @version      1.10
+// @version      1.11
 // @description  Rotar enlaces con opción de pausa y reanudación mediante botones visibles, con contador de tiempo fluido.
 // @author       Tú
 // @match        https://app.powerbi.com/*
@@ -32,7 +32,7 @@
 
     // Configuración del tiempo (modificable)
     const rotationTime = {
-        seconds: 0,
+        seconds: 10,
         minutes: 5,
         hours: 0
     };
