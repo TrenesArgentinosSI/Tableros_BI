@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Tableros Presidencia
 // @namespace    http://tampermonkey.net/
-// @version      1.14
+// @version      1.15
 // @description  Rotar enlaces con opción de pausa y reanudación mediante botones visibles, con contador de tiempo fluido.
 // @author       Tú
 // @match        https://app.powerbi.com/*
@@ -13,10 +13,10 @@
 
     const links = [
 
-        "https://app.powerbi.com/groups/1c63bf60-4443-4c91-91e1-4b56098b309d/reports/f86773a1-278c-4bba-8b91-6f95b806f073/ReportSection1554dd7e053a66979e0b?experience=power-bi&chromeless=true",
-        "https://app.powerbi.com/groups/1c63bf60-4443-4c91-91e1-4b56098b309d/reports/f86773a1-278c-4bba-8b91-6f95b806f073/ReportSection770011af8ecda9a8b3eb?experience=power-bi&chromeless=true",
-        "https://app.powerbi.com/groups/1c63bf60-4443-4c91-91e1-4b56098b309d/reports/f86773a1-278c-4bba-8b91-6f95b806f073/ReportSectionf9fe292b4b0b2244a793?experience=power-bi&chromeless=true",
-        "https://app.powerbi.com/groups/1c63bf60-4443-4c91-91e1-4b56098b309d/reports/f86773a1-278c-4bba-8b91-6f95b806f073/ReportSection7b34db0f300b875c8c1b?experience=power-bi&chromeless=true"
+        "https://app.powerbi.com/groups/me/reports/cb45d594-defe-448d-a218-1ff6ad03172f/ReportSection1554dd7e053a66979e0b?experience=power-bi&chromeless=true",
+        "https://app.powerbi.com/groups/me/reports/cb45d594-defe-448d-a218-1ff6ad03172f/ReportSection770011af8ecda9a8b3eb?experience=power-bi&chromeless=true",
+        "https://app.powerbi.com/groups/me/reports/cb45d594-defe-448d-a218-1ff6ad03172f/ReportSectionf9fe292b4b0b2244a793?experience=power-bi&chromeless=true",
+        "https://app.powerbi.com/groups/me/reports/cb45d594-defe-448d-a218-1ff6ad03172f/ReportSection7b34db0f300b875c8c1b?experience=power-bi&chromeless=true"
         ];
 // URLs permitidas
 
