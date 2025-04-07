@@ -10,8 +10,8 @@
 (function () {
     'use strict';
 
-    // 👇 Pegá tu URL de Apps Script acá
-    const MAIL_WEBHOOK_URL = "https://formspree.io/f/mrbpoyzl"; // <--- REEMPLAZAR
+    
+    const MAIL_WEBHOOK_URL = "https://formspree.io/f/mrbpoyzl"; 
 
 
 
