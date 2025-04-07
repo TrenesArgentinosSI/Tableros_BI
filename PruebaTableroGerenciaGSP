@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         Tableros Gerencia GSP
 // @namespace    http://tampermonkey.net/
-// @version      1.31
-// @description  Detecta errores, envía mail si se rompe un tablero y rota automáticamente al siguiente. Incluye botones de pausa/reanudar y pantalla completa opcional abajo a la derecha.
+// @version      1.32
+// @description  Rota tableros, detecta errores, envía mail, incluye botones de pausa y logo de Trenes arriba a la derecha.
 // @author       Tú
 // @match        https://app.powerbi.com/*
 // ==/UserScript==
@@ -10,21 +10,18 @@
 (function () {
     'use strict';
 
-    
-    const MAIL_WEBHOOK_URL = "https://formspree.io/f/mrbpoyzl"; 
+    const MAIL_WEBHOOK_URL = "https://formspree.io/f/mrbpoyzl";
 
-
-
-    const links = [
+   const links = [
         "https://app.powerbi.com/groups/me/reports/7e9d3785-efd4-4ba6-86b2-e6890eaf9efc/ReportSection020b3c6bb1de02141e39?ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&chromeless=true&experience=power-bi", // resumen ejecutivo
         "https://app.powerbi.com/groups/me/reports/82b9efd6-ed22-472f-95e9-336547f995f1/7494775d5c4c11eddb1d?ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&chromeless=true&experience=power-bi", // portal gsp
-        "https://app.powerbi.com/groups/me/reports/79f67593-bef4-4cdf-a865-11e92d41571b/ReportSection?ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&chromeless=true&experience=power-bi", //Riesgos grc 
+        "https://app.powerbi.com/groups/me/reports/79f67593-bef4-4cdf-a865-11e92d41571b/ReportSection?ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&chromeless=true&experience=power-bi", //Riesgos grc
         "https://app.powerbi.com/groups/me/reports/3d207542-1bcb-4557-a2e1-4a195a66ebef/ReportSection?ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&chromeless=true&experience=power-bi", //status backups
         "https://app.powerbi.com/groups/me/reports/88b3d9cb-4e34-46b3-8f05-4e2776595a03/ReportSection598b87c7344b73973402?ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&chromeless=true&experience=power-bi",//detalle backups
-        "https://app.powerbi.com/groups/630bc243-2261-4e9d-9739-12919cf2727e/reports/481e7a55-3d56-4b5f-a736-de466a672cb7/3f59c63e62ec2e696753?experience=power-bi&chromeless=true",// geolocalizacio
+        "https://app.powerbi.com/groups/me/reports/481e7a55-3d56-4b5f-a736-de466a672cb7/3f59c63e62ec2e696753?experience=power-bi&chromeless=true",// geolocalizacio
         "https://app.powerbi.com/groups/me/reports/cb45d594-defe-448d-a218-1ff6ad03172f/ReportSection1554dd7e053a66979e0b?experience=power-bi&chromeless=true", //empleados, altas, bajas
-        "https://app.powerbi.com/groups/5320e04e-ab1f-4e12-9ab3-230f02c65d17/reports/f542c10d-bc0a-41be-8983-9a6b9f25ccb2/56ad26d522ccc2e3b89c?ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&experience=power-bi&chromeless=true", //Recaudaciones 2024
-        "https://app.powerbi.com/groups/5320e04e-ab1f-4e12-9ab3-230f02c65d17/reports/f542c10d-bc0a-41be-8983-9a6b9f25ccb2/39641eae0b32fe7ea9da?ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&experience=power-bi&chromeless=true" //Recaudaciones 2025
+        "https://app.powerbi.com/groups/me/reports/f542c10d-bc0a-41be-8983-9a6b9f25ccb2/56ad26d522ccc2e3b89c?ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&experience=power-bi&chromeless=true", //Recaudaciones 2024
+        "https://app.powerbi.com/groups/me/reports/f542c10d-bc0a-41be-8983-9a6b9f25ccb2/39641eae0b32fe7ea9da?ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&experience=power-bi&chromeless=true" //Recaudaciones 2025
         ];
 
     const currentUrl = window.location.href;
@@ -33,7 +30,7 @@
         return;
     }
 
-     // Configuración del tiempo (modificable)
+    // Configuración del tiempo (modificable)
     const rotationTime = {
         seconds: 25,
         minutes: 0,
@@ -53,18 +50,16 @@
     let startTime = 0;
 
     function sendMail(asunto, mensaje) {
-    fetch(MAIL_WEBHOOK_URL, {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-            message: `${asunto}\n\n${mensaje}\nTablero: ${links[index]}\nFecha: ${new Date().toISOString()}`
+        fetch(MAIL_WEBHOOK_URL, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+                message: `${asunto}\n\n${mensaje}\nTablero: ${links[index]}\nFecha: ${new Date().toISOString()}`
+            })
         })
-    })
-    .then(() => console.log("Mail enviado con Formspree"))
-    .catch(error => console.error("Error con Formspree:", error));
-}
+        .then(() => console.log("📨 Mail enviado con Formspree"))
+        .catch(error => console.error("❌ Error con Formspree:", error));
+    }
 
     function rotateToNext() {
         clearInterval(timer);
@@ -128,13 +123,11 @@
         button.style.cursor = 'pointer';
         button.style.borderRadius = '5px';
         button.style.transition = 'background 0.3s, transform 0.2s';
-
         button.onmouseover = () => button.style.backgroundColor = '#0057c7';
         button.onmouseout = () => button.style.backgroundColor = '#0078d7';
         button.onmousedown = () => button.style.transform = 'scale(0.95)';
         button.onmouseup = () => button.style.transform = 'scale(1)';
         button.onclick = onClick;
-
         return button;
     }
 
@@ -166,18 +159,30 @@
         return container;
     }
 
-    function createFullscreenButton() {
-        const button = createButton("Pantalla completa", () => {
-            document.documentElement.requestFullscreen().catch(() => {
-                console.warn("Pantalla completa requiere interacción del usuario.");
-            });
-        }, "small");
-        button.style.position = "fixed";
-        button.style.bottom = "20px";
-        button.style.right = "20px";
-        button.style.zIndex = "9999";
-        document.body.appendChild(button);
-    }
+   
+
+
+    function createTopRightLogo() {
+    const container = document.createElement('div');
+    container.style.position = "fixed";
+    container.style.top = "15px";
+    container.style.right = "15px";
+    container.style.backgroundColor = "#ffffff";
+    container.style.borderRadius = "12px";
+    container.style.padding = "8px";
+    container.style.boxShadow = "0 2px 6px rgba(0,0,0,0.2)";
+    container.style.zIndex = "9999";
+
+    const img = document.createElement('img');
+    img.src = "https://upload.wikimedia.org/wikipedia/commons/c/c5/Trenes_arg_operac_logo.png";
+    img.alt = "Logo Trenes Argentinos";
+    img.style.height = "50px";
+    img.style.display = "block";
+
+    container.appendChild(img);
+    document.body.appendChild(container);
+}
+
 
     const container = createButtonContainer();
     const timerContainer = createTimerContainer();
@@ -188,7 +193,7 @@
     container.appendChild(resumeButton);
     container.appendChild(stopButton);
     timerContainer.appendChild(timerDisplay);
-    createFullscreenButton();
+    createTopRightLogo();
 
     function checkForErrorMessage() {
         const errorText = "No pudimos encontrar ese informe";
@@ -198,11 +203,13 @@
         if (found && !paused) {
             console.warn("Tablero roto detectado");
             sendMail("Tablero Gerencia GSP falló", "Se detectó un tablero roto.");
-            setTimeout(() => rotateToNext(), 2000); // espera 2 seg y rota
+            setTimeout(() => rotateToNext(), 2000);
         }
     }
 
     setInterval(checkForErrorMessage, 5000);
     setButtonActive(resumeButton, stopButton);
     startTimer();
+
+
 })();
