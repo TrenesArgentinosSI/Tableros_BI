@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Tableros Gerencia GSP
 // @namespace    http://tampermonkey.net/
-// @version      1.10
+// @version      1.32
 // @description  Rota tableros, detecta errores, envía mail, incluye botones de pausa y logo de Trenes arriba a la derecha.
 // @author       Tú
 // @match        https://app.powerbi.com/*
@@ -162,26 +162,6 @@
    
 
 
-    function createTopRightLogo() {
-    const container = document.createElement('div');
-    container.style.position = "fixed";
-    container.style.top = "15px";
-    container.style.right = "15px";
-    container.style.backgroundColor = "#ffffff";
-    container.style.borderRadius = "12px";
-    container.style.padding = "8px";
-    container.style.boxShadow = "0 2px 6px rgba(0,0,0,0.2)";
-    container.style.zIndex = "9999";
-
-    const img = document.createElement('img');
-    img.src = "https://upload.wikimedia.org/wikipedia/commons/c/c5/Trenes_arg_operac_logo.png";
-    img.alt = "Logo Trenes Argentinos";
-    img.style.height = "50px";
-    img.style.display = "block";
-
-    container.appendChild(img);
-    document.body.appendChild(container);
-}
 
 
     const container = createButtonContainer();
@@ -193,7 +173,7 @@
     container.appendChild(resumeButton);
     container.appendChild(stopButton);
     timerContainer.appendChild(timerDisplay);
-    createTopRightLogo();
+  
 
     function checkForErrorMessage() {
         const errorText = "No pudimos encontrar ese informe";
