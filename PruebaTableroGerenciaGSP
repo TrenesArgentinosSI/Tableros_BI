@@ -1,0 +1,206 @@
+// ==UserScript==
+// @name         Tableros Gerencia GSP
+// @namespace    http://tampermonkey.net/
+// @version      1.31
+// @description  Detecta errores, envía mail si se rompe un tablero y rota automáticamente al siguiente. Incluye botones de pausa/reanudar y pantalla completa opcional abajo a la derecha.
+// @author       Tú
+// @match        https://app.powerbi.com/*
+// ==/UserScript==
+
+(function () {
+    'use strict';
+
+    // 👇 Pegá tu URL de Apps Script acá
+    const MAIL_WEBHOOK_URL = "https://formspree.io/f/mrbpoyzl"; // <--- REEMPLAZAR
+
+
+
+    const links = [
+         "https://app.powerbi.com/groups/me/reports/7e9d3785-efd4-4ba6-86b2-e6890eaf9efc/ReportSection020b3c6bb1de02141e39?chromeless=true&experience=power-bi",
+        "https://app.powerbi.com/groups/me/reports/82b9efd6-ed22-472f-95e9-336547f995f1/7494775d5c4c11eddb1d?chromeless=true&experience=power-bi",
+        "https://app.powerbi.com/groups/me/reports/79f67593-bef4-4cdf-a865-11e92d41571b/ReportSection?chromeless=true&experience=power-bi",
+        "https://app.powerbi.com/groups/me/reports/3d207542-1bcb-4557-a2e1-4a195a66ebef/ReportSection?chromeless=true&experience=power-bi",
+        "https://app.powerbi.com/groups/me/reports/88b3d9cb-4e34-46b3-8f05-4e2776595a03/ReportSection598b87c7344b73973402?chromeless=true&experience=power-bi",
+        "https://app.powerbi.com/groups/630bc243-2261-4e9d-9739-12919cf2727e/reports/481e7a55-3d56-4b5f-a736-de466a672cb7/3f59c63e62ec2e696753?chromeless=true&experience=power-bi",
+        "https://app.powerbi.com/groups/me/reports/cb45d594-defe-448d-a218-1ff6ad03172f/ReportSection1554dd7e053a66979e0b?chromeless=true&experience=power-bi"
+];
+
+    const currentUrl = window.location.href;
+    if (!links.includes(currentUrl)) {
+        console.log("Este script no se ejecuta en esta página.");
+        return;
+    }
+
+     // Configuración del tiempo (modificable)
+    const rotationTime = {
+        seconds: 0,
+        minutes: 5,
+        hours: 0
+    };
+
+    // Calcula el tiempo total en milisegundos
+    const delay = (rotationTime.seconds || 0) * 1000 +
+                  (rotationTime.minutes || 0) * 60 * 1000 +
+                  (rotationTime.hours || 0) * 60 * 60 * 1000;
+
+    let index = parseInt(localStorage.getItem('rotateIndex'), 10) || 0;
+    let timer = null;
+    let paused = false;
+    let remainingTime = delay;
+    let lastPausedTime = 0;
+    let startTime = 0;
+
+    function sendMail(asunto, mensaje) {
+    fetch(MAIL_WEBHOOK_URL, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            message: `${asunto}\n\n${mensaje}\nTablero: ${links[index]}\nFecha: ${new Date().toISOString()}`
+        })
+    })
+    .then(() => console.log("Mail enviado con Formspree"))
+    .catch(error => console.error("Error con Formspree:", error));
+}
+
+    function rotateToNext() {
+        clearInterval(timer);
+        index = (index + 1) % links.length;
+        localStorage.setItem('rotateIndex', index);
+        window.location.href = links[index];
+    }
+
+    function startTimer() {
+        paused = false;
+        setButtonActive(resumeButton, stopButton);
+        startTime = lastPausedTime ? Date.now() - (delay - lastPausedTime) : Date.now();
+        updateTimerDisplay();
+
+        timer = setInterval(() => {
+            const elapsedTime = Date.now() - startTime;
+            remainingTime = delay - elapsedTime;
+
+            if (remainingTime <= 0) {
+                index = (index + 1) % links.length;
+                localStorage.setItem('rotateIndex', index);
+                window.location.href = links[index];
+                clearInterval(timer);
+            } else {
+                updateTimerDisplay();
+            }
+        }, 1000);
+    }
+
+    function stopTimer() {
+        paused = true;
+        setButtonActive(stopButton, resumeButton);
+        clearInterval(timer);
+        lastPausedTime = remainingTime;
+        updateTimerDisplay();
+    }
+
+    function setButtonActive(active, inactive) {
+        active.style.backgroundColor = '#0056b3';
+        active.style.color = '#fff';
+        inactive.style.backgroundColor = '#0078d7';
+        inactive.style.color = '#e0e0e0';
+    }
+
+    function updateTimerDisplay() {
+        const secondsLeft = Math.max(Math.floor(remainingTime / 1000), 0);
+        const minutes = Math.floor(secondsLeft / 60);
+        const seconds = secondsLeft % 60;
+        timerDisplay.textContent = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+    }
+
+    function createButton(text, onClick, size = "normal") {
+        const button = document.createElement('button');
+        button.textContent = text;
+        button.style.padding = size === "small" ? '8px 16px' : '15px 30px';
+        button.style.fontSize = size === "small" ? '12px' : '16px';
+        button.style.margin = '0 10px';
+        button.style.background = '#0078d7';
+        button.style.color = '#fff';
+        button.style.border = 'none';
+        button.style.cursor = 'pointer';
+        button.style.borderRadius = '5px';
+        button.style.transition = 'background 0.3s, transform 0.2s';
+
+        button.onmouseover = () => button.style.backgroundColor = '#0057c7';
+        button.onmouseout = () => button.style.backgroundColor = '#0078d7';
+        button.onmousedown = () => button.style.transform = 'scale(0.95)';
+        button.onmouseup = () => button.style.transform = 'scale(1)';
+        button.onclick = onClick;
+
+        return button;
+    }
+
+    function createButtonContainer() {
+        const container = document.createElement('div');
+        container.style.position = 'fixed';
+        container.style.bottom = '20px';
+        container.style.left = '50%';
+        container.style.transform = 'translateX(-50%)';
+        container.style.zIndex = '9999';
+        container.style.display = 'flex';
+        document.body.appendChild(container);
+        return container;
+    }
+
+    function createTimerContainer() {
+        const container = document.createElement('div');
+        container.style.position = 'fixed';
+        container.style.top = '20px';
+        container.style.left = '20px';
+        container.style.backgroundColor = '#e0f7ff';
+        container.style.borderRadius = '12px';
+        container.style.padding = '10px 15px';
+        container.style.zIndex = '9999';
+        container.style.fontSize = '20px';
+        container.style.color = '#333';
+        container.style.fontWeight = 'bold';
+        document.body.appendChild(container);
+        return container;
+    }
+
+    function createFullscreenButton() {
+        const button = createButton("Pantalla completa", () => {
+            document.documentElement.requestFullscreen().catch(() => {
+                console.warn("Pantalla completa requiere interacción del usuario.");
+            });
+        }, "small");
+        button.style.position = "fixed";
+        button.style.bottom = "20px";
+        button.style.right = "20px";
+        button.style.zIndex = "9999";
+        document.body.appendChild(button);
+    }
+
+    const container = createButtonContainer();
+    const timerContainer = createTimerContainer();
+    const stopButton = createButton('Detener', stopTimer);
+    const resumeButton = createButton('Reanudar', startTimer);
+    const timerDisplay = document.createElement('div');
+
+    container.appendChild(resumeButton);
+    container.appendChild(stopButton);
+    timerContainer.appendChild(timerDisplay);
+    createFullscreenButton();
+
+    function checkForErrorMessage() {
+        const errorText = "No pudimos encontrar ese informe";
+        const elements = Array.from(document.querySelectorAll('div, span, p'));
+        const found = elements.some(el => el.textContent?.includes(errorText));
+
+        if (found && !paused) {
+            console.warn("Tablero roto detectado");
+            sendMail("Tablero Gerencia GSP falló", "Se detectó un tablero roto.");
+            setTimeout(() => rotateToNext(), 2000); // espera 2 seg y rota
+        }
+    }
+
+    setInterval(checkForErrorMessage, 5000);
+    setButtonActive(resumeButton, stopButton);
+    startTimer();
+})();
