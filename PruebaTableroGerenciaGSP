@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Tableros Gerencia GSP
 // @namespace    http://tampermonkey.net/
-// @version      1.32
+// @version      1.10
 // @description  Rota tableros, detecta errores, envía mail, incluye botones de pausa y logo de Trenes arriba a la derecha.
 // @author       Tú
 // @match        https://app.powerbi.com/*
