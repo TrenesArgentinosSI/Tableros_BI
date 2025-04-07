@@ -11,7 +11,6 @@
     'use strict';
 
     const MAIL_WEBHOOK_URL = "https://formspree.io/f/mrbpoyzl";
-
    const links = [
         "https://app.powerbi.com/groups/me/reports/7e9d3785-efd4-4ba6-86b2-e6890eaf9efc/ReportSection020b3c6bb1de02141e39?ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&chromeless=true&experience=power-bi", // resumen ejecutivo
         "https://app.powerbi.com/groups/me/reports/82b9efd6-ed22-472f-95e9-336547f995f1/7494775d5c4c11eddb1d?ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&chromeless=true&experience=power-bi", // portal gsp
@@ -24,6 +23,20 @@
         "https://app.powerbi.com/groups/me/reports/f542c10d-bc0a-41be-8983-9a6b9f25ccb2/39641eae0b32fe7ea9da?ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&experience=power-bi&chromeless=true" //Recaudaciones 2025
         ];
 
+    function getNoSeVisualiza() {
+    return JSON.parse(localStorage.getItem("NoSeVisualiza") || "[]");
+}
+
+function addToNoSeVisualiza(url) {
+    const lista = getNoSeVisualiza();
+    if (!lista.includes(url)) {
+        lista.push(url);
+        localStorage.setItem("NoSeVisualiza", JSON.stringify(lista));
+        console.warn(" URL agregada a NoSeVisualiza:", url);
+    }
+}
+
+
     const currentUrl = window.location.href;
     if (!links.includes(currentUrl)) {
         console.log("Este script no se ejecuta en esta página.");
@@ -32,7 +45,7 @@
 
     // Configuración del tiempo (modificable)
     const rotationTime = {
-        seconds: 25,
+        seconds: 20,
         minutes: 0,
         hours: 0
     };
@@ -57,16 +70,28 @@
                 message: `${asunto}\n\n${mensaje}\nTablero: ${links[index]}\nFecha: ${new Date().toISOString()}`
             })
         })
-        .then(() => console.log("📨 Mail enviado con Formspree"))
-        .catch(error => console.error("❌ Error con Formspree:", error));
+        .then(() => console.log("Mail enviado con Formspree"))
+        .catch(error => console.error("Error con Formspree:", error));
     }
 
-    function rotateToNext() {
-        clearInterval(timer);
-        index = (index + 1) % links.length;
-        localStorage.setItem('rotateIndex', index);
-        window.location.href = links[index];
+   function rotateToNext() {
+    clearInterval(timer);
+    const blacklist = getNoSeVisualiza();
+    let nextIndex = index;
+
+    for (let i = 0; i < links.length; i++) {
+        nextIndex = (nextIndex + 1) % links.length;
+        if (!blacklist.includes(links[nextIndex])) {
+            index = nextIndex;
+            localStorage.setItem('rotateIndex', index);
+            window.location.href = links[index];
+            return;
+        }
     }
+
+    console.warn("No hay tableros disponibles que se puedan visualizar.");
+}
+
 
     function startTimer() {
         paused = false;
@@ -183,6 +208,7 @@
         if (found && !paused) {
             console.warn("Tablero roto detectado");
             sendMail("Tablero Gerencia GSP falló", "Se detectó un tablero roto.");
+            addToNoSeVisualiza(currentUrl);
             setTimeout(() => rotateToNext(), 2000);
         }
     }
