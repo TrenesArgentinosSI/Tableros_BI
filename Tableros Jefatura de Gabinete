@@ -5,8 +5,8 @@
 // @description  Rotacion de tableros
 // @author       SeguridadInformatica
 // @match        https://app.powerbi.com/*
-// @updateURL    https://github.com/TrenesArgentinosSI/Tableros_BI/raw/refs/heads/main/Tableros%20Jefatura%20de%20Gabinete.js
-// @downloadURL  https://github.com/TrenesArgentinosSI/Tableros_BI/raw/refs/heads/main/Tableros%20Jefatura%20de%20Gabinete.js
+// @updateURL    https://raw.githubusercontent.com/TrenesArgentinosSI/Tableros_BI/refs/heads/main/Tableros%20Jefatura%20de%20Gabinete
+// @downloadURL  https://raw.githubusercontent.com/TrenesArgentinosSI/Tableros_BI/refs/heads/main/Tableros%20Jefatura%20de%20Gabinete
 // ==/UserScript==
 (function() {
     'use strict';
