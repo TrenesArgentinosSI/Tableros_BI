@@ -45,8 +45,8 @@ function addToNoSeVisualiza(url) {
 
     // Configuración del tiempo (modificable)
     const rotationTime = {
-        seconds: 20,
-        minutes: 0,
+        seconds: 0,
+        minutes: 10,
         hours: 0
     };
 
@@ -184,7 +184,19 @@ function addToNoSeVisualiza(url) {
         return container;
     }
 
-   
+ function checkForErrorMessage() {
+        const errorText = "No pudimos encontrar ese informe";
+        const elements = Array.from(document.querySelectorAll('div, span, p'));
+        const found = elements.some(el => el.textContent?.includes(errorText));
+
+        if (found && !paused) {
+            console.warn("Tablero roto detectado");
+            sendMail("Tablero Gerencia GSP falló", "Se detectó un tablero roto.");
+            addToNoSeVisualiza(currentUrl);
+            setTimeout(() => rotateToNext(), 2000);
+        }
+    }
+
 
 
 
@@ -198,20 +210,8 @@ function addToNoSeVisualiza(url) {
     container.appendChild(resumeButton);
     container.appendChild(stopButton);
     timerContainer.appendChild(timerDisplay);
-  
 
-    function checkForErrorMessage() {
-        const errorText = "No pudimos encontrar ese informe";
-        const elements = Array.from(document.querySelectorAll('div, span, p'));
-        const found = elements.some(el => el.textContent?.includes(errorText));
 
-        if (found && !paused) {
-            console.warn("Tablero roto detectado");
-            sendMail("Tablero Gerencia GSP falló", "Se detectó un tablero roto.");
-            addToNoSeVisualiza(currentUrl);
-            setTimeout(() => rotateToNext(), 2000);
-        }
-    }
 
     setInterval(checkForErrorMessage, 5000);
     setButtonActive(resumeButton, stopButton);
