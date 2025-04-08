@@ -5,6 +5,9 @@
 // @description  Rota tableros, detecta errores, envía mail, incluye botones de pausa y logo de Trenes arriba a la derecha.
 // @author       Tú
 // @match        https://app.powerbi.com/*
+// @updateURL    https://github.com/TrenesArgentinosSI/Tableros_BI/raw/refs/heads/main/Prueba%20Tableros%20Gerencia%20GSP.js
+// @downloadURL  https://github.com/TrenesArgentinosSI/Tableros_BI/raw/refs/heads/main/Prueba%20Tableros%20Gerencia%20GSP.js
+
 // ==/UserScript==
 
 (function () {
