@@ -10,55 +10,114 @@
 
 // ==/UserScript==
 
+
 (function () {
     'use strict';
 
     const MAIL_WEBHOOK_URL = "https://formspree.io/f/mrbpoyzl";
-   const links = [
+
+    const linksOriginal = [
         "https://app.powerbi.com/groups/me/reports/7e9d3785-efd4-4ba6-86b2-e6890eaf9efc/ReportSection020b3c6bb1de02141e39?ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&chromeless=true&experience=power-bi", // resumen ejecutivo
+"https://app.powerbi.com/groups/me/reports/88b3d9cb-4e34-46b3-8f05-4e2776595a03/ReportSection598b87c7344b73973402?ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&chromeless=true&experience=power-bi",//detalle backups
         "https://app.powerbi.com/groups/me/reports/82b9efd6-ed22-472f-95e9-336547f995f1/7494775d5c4c11eddb1d?ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&chromeless=true&experience=power-bi", // portal gsp
         "https://app.powerbi.com/groups/me/reports/79f67593-bef4-4cdf-a865-11e92d41571b/ReportSection?ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&chromeless=true&experience=power-bi", //Riesgos grc
         "https://app.powerbi.com/groups/me/reports/3d207542-1bcb-4557-a2e1-4a195a66ebef/ReportSection?ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&chromeless=true&experience=power-bi", //status backups
-        "https://app.powerbi.com/groups/me/reports/88b3d9cb-4e34-46b3-8f05-4e2776595a03/ReportSection598b87c7344b73973402?ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&chromeless=true&experience=power-bi",//detalle backups
+
         "https://app.powerbi.com/groups/me/reports/481e7a55-3d56-4b5f-a736-de466a672cb7/3f59c63e62ec2e696753?experience=power-bi&chromeless=true",// geolocalizacio
         "https://app.powerbi.com/groups/me/reports/cb45d594-defe-448d-a218-1ff6ad03172f/ReportSection1554dd7e053a66979e0b?experience=power-bi&chromeless=true", //empleados, altas, bajas
         "https://app.powerbi.com/groups/me/reports/f542c10d-bc0a-41be-8983-9a6b9f25ccb2/56ad26d522ccc2e3b89c?ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&experience=power-bi&chromeless=true", //Recaudaciones 2024
         "https://app.powerbi.com/groups/me/reports/f542c10d-bc0a-41be-8983-9a6b9f25ccb2/39641eae0b32fe7ea9da?ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&experience=power-bi&chromeless=true" //Recaudaciones 2025
         ];
 
-    function getNoSeVisualiza() {
-    return JSON.parse(localStorage.getItem("NoSeVisualiza") || "[]");
-}
-
-function addToNoSeVisualiza(url) {
-    const lista = getNoSeVisualiza();
-    if (!lista.includes(url)) {
-        lista.push(url);
-        localStorage.setItem("NoSeVisualiza", JSON.stringify(lista));
-        console.warn(" URL agregada a NoSeVisualiza:", url);
+    const blacklistKey = 'NoSeVisualiza';
+    function getBlacklist() {
+        return JSON.parse(localStorage.getItem(blacklistKey) || '[]');
     }
-}
 
+    function addToBlacklist(url) {
+        const list = getBlacklist();
+        if (!list.includes(url)) {
+            list.push(url);
+            localStorage.setItem(blacklistKey, JSON.stringify(list));
+            console.warn("URL agregada a NoSeVisualiza:", url);
+        }
+    }
 
+    function showBlacklist() {
+        const list = getBlacklist();
+        const content = list.length
+            ? list.map((url, i) => `${i + 1}. ${url}`).join('\n')
+            : "No hay tableros rotos registrados.";
+
+        const popup = window.open('', 'TablerosRotos', 'width=800,height=500');
+        popup.document.write(`
+            <html>
+            <head>
+                <title>Tableros rotos</title>
+                <style>
+                    body {
+                        font-family: Arial, sans-serif;
+                        background-color: #f4f4f4;
+                        padding: 20px;
+                        color: #333;
+                    }
+                    h2 {
+                        margin-top: 0;
+                        color: #0078d7;
+                    }
+                    textarea {
+                        width: 100%;
+                        height: 300px;
+                        padding: 10px;
+                        font-size: 14px;
+                        border: 1px solid #ccc;
+                        border-radius: 6px;
+                        resize: none;
+                    }
+                    .button-container {
+                        display: flex;
+                        justify-content: flex-end;
+                        margin-top: 10px;
+                    }
+                    button {
+                        background-color: #dc3545;
+                        color: white;
+                        border: none;
+                        padding: 8px 16px;
+                        font-size: 14px;
+                        border-radius: 4px;
+                        cursor: pointer;
+                    }
+                    button:hover {
+                        background-color: #c82333;
+                    }
+                </style>
+            </head>
+            <body>
+                <h2>Tableros no visualizables</h2>
+                <textarea readonly>${content}</textarea>
+                <div class="button-container">
+                    <button onclick="localStorage.setItem('${blacklistKey}', '[]'); alert('Lista limpiada'); location.reload();">Limpiar lista</button>
+                </div>
+            </body>
+            </html>
+        `);
+    }
+
+    const validLinks = linksOriginal.filter(url => !getBlacklist().includes(url));
     const currentUrl = window.location.href;
-    if (!links.includes(currentUrl)) {
-        console.log("Este script no se ejecuta en esta página.");
+    if (!validLinks.includes(currentUrl)) {
+        console.log("Script no se ejecuta en esta página válida.");
+        rotateToNext();
         return;
     }
 
-    // Configuración del tiempo (modificable)
-    const rotationTime = {
-        seconds: 0,
-        minutes: 10,
-        hours: 0
-    };
-
-    // Calcula el tiempo total en milisegundos
+    const rotationTime = { seconds: 20, minutes: 0, hours: 0 };
     const delay = (rotationTime.seconds || 0) * 1000 +
-                  (rotationTime.minutes || 0) * 60 * 1000 +
-                  (rotationTime.hours || 0) * 60 * 60 * 1000;
+        (rotationTime.minutes || 0) * 60 * 1000 +
+        (rotationTime.hours || 0) * 60 * 60 * 1000;
 
-    let index = parseInt(localStorage.getItem('rotateIndex'), 10) || 0;
+    let index = validLinks.indexOf(currentUrl);
     let timer = null;
     let paused = false;
     let remainingTime = delay;
@@ -70,50 +129,35 @@ function addToNoSeVisualiza(url) {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
-                message: `${asunto}\n\n${mensaje}\nTablero: ${links[index]}\nFecha: ${new Date().toISOString()}`
+                message: `${asunto}\n\n${mensaje}\nTablero: ${validLinks[index]}\nFecha: ${new Date().toISOString()}`
             })
         })
-        .then(() => console.log("Mail enviado con Formspree"))
-        .catch(error => console.error("Error con Formspree:", error));
+            .then(() => console.log("Mail enviado"))
+            .catch(e => console.error("Error al enviar mail", e));
     }
 
-   function rotateToNext() {
-    clearInterval(timer);
-    const blacklist = getNoSeVisualiza();
-    let nextIndex = index;
-
-    for (let i = 0; i < links.length; i++) {
-        nextIndex = (nextIndex + 1) % links.length;
-        if (!blacklist.includes(links[nextIndex])) {
-            index = nextIndex;
-            localStorage.setItem('rotateIndex', index);
-            window.location.href = links[index];
+    function rotateToNext() {
+        clearInterval(timer);
+        const updatedList = linksOriginal.filter(url => !getBlacklist().includes(url));
+        if (updatedList.length === 0) {
+            console.warn("No quedan tableros para mostrar.");
             return;
         }
+        index = (index + 1) % updatedList.length;
+        localStorage.setItem('rotateIndex', index);
+        window.location.href = updatedList[index];
     }
-
-    console.warn("No hay tableros disponibles que se puedan visualizar.");
-}
-
 
     function startTimer() {
         paused = false;
         setButtonActive(resumeButton, stopButton);
         startTime = lastPausedTime ? Date.now() - (delay - lastPausedTime) : Date.now();
         updateTimerDisplay();
-
         timer = setInterval(() => {
             const elapsedTime = Date.now() - startTime;
             remainingTime = delay - elapsedTime;
-
-            if (remainingTime <= 0) {
-                index = (index + 1) % links.length;
-                localStorage.setItem('rotateIndex', index);
-                window.location.href = links[index];
-                clearInterval(timer);
-            } else {
-                updateTimerDisplay();
-            }
+            if (remainingTime <= 0) rotateToNext();
+            else updateTimerDisplay();
         }, 1000);
     }
 
@@ -125,13 +169,6 @@ function addToNoSeVisualiza(url) {
         updateTimerDisplay();
     }
 
-    function setButtonActive(active, inactive) {
-        active.style.backgroundColor = '#0056b3';
-        active.style.color = '#fff';
-        inactive.style.backgroundColor = '#0078d7';
-        inactive.style.color = '#e0e0e0';
-    }
-
     function updateTimerDisplay() {
         const secondsLeft = Math.max(Math.floor(remainingTime / 1000), 0);
         const minutes = Math.floor(secondsLeft / 60);
@@ -139,18 +176,27 @@ function addToNoSeVisualiza(url) {
         timerDisplay.textContent = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
     }
 
-    function createButton(text, onClick, size = "normal") {
+    function setButtonActive(active, inactive) {
+        active.style.backgroundColor = '#0056b3';
+        active.style.color = '#fff';
+        inactive.style.backgroundColor = '#0078d7';
+        inactive.style.color = '#e0e0e0';
+    }
+
+    function createButton(text, onClick, size = "normal", isRound = false) {
         const button = document.createElement('button');
-        button.textContent = text;
-        button.style.padding = size === "small" ? '8px 16px' : '15px 30px';
-        button.style.fontSize = size === "small" ? '12px' : '16px';
+        button.innerHTML = text;
+        button.style.padding = size === "small" ? '8px' : '15px 30px';
+        button.style.fontSize = size === "small" ? '14px' : '16px';
         button.style.margin = '0 10px';
         button.style.background = '#0078d7';
         button.style.color = '#fff';
         button.style.border = 'none';
         button.style.cursor = 'pointer';
-        button.style.borderRadius = '5px';
+        button.style.borderRadius = isRound ? '50%' : '5px';
         button.style.transition = 'background 0.3s, transform 0.2s';
+        button.style.width = isRound ? '40px' : 'auto';
+        button.style.height = isRound ? '40px' : 'auto';
         button.onmouseover = () => button.style.backgroundColor = '#0057c7';
         button.onmouseout = () => button.style.backgroundColor = '#0078d7';
         button.onmousedown = () => button.style.transform = 'scale(0.95)';
@@ -159,66 +205,83 @@ function addToNoSeVisualiza(url) {
         return button;
     }
 
-    function createButtonContainer() {
-        const container = document.createElement('div');
-        container.style.position = 'fixed';
-        container.style.bottom = '20px';
-        container.style.left = '50%';
-        container.style.transform = 'translateX(-50%)';
-        container.style.zIndex = '9999';
-        container.style.display = 'flex';
-        document.body.appendChild(container);
-        return container;
-    }
+    const container = document.createElement('div');
+    container.style.position = 'fixed';
+    container.style.bottom = '20px';
+    container.style.left = '50%';
+    container.style.transform = 'translateX(-50%)';
+    container.style.zIndex = '9999';
+    container.style.display = 'flex';
+    document.body.appendChild(container);
 
-    function createTimerContainer() {
-        const container = document.createElement('div');
-        container.style.position = 'fixed';
-        container.style.top = '20px';
-        container.style.left = '20px';
-        container.style.backgroundColor = '#e0f7ff';
-        container.style.borderRadius = '12px';
-        container.style.padding = '10px 15px';
-        container.style.zIndex = '9999';
-        container.style.fontSize = '20px';
-        container.style.color = '#333';
-        container.style.fontWeight = 'bold';
-        document.body.appendChild(container);
-        return container;
-    }
+    const stopButton = createButton('Detener', stopTimer);
+    const resumeButton = createButton('Reanudar', startTimer);
+    container.appendChild(resumeButton);
+    container.appendChild(stopButton);
 
- function checkForErrorMessage() {
+    const configButton = createButton('⚙️', showBlacklist, 'small', true);
+    configButton.style.position = 'fixed';
+    configButton.style.top = '20px';
+    configButton.style.right = '20px';
+    configButton.style.zIndex = '10000';
+    document.body.appendChild(configButton);
+
+    const timerContainer = document.createElement('div');
+    timerContainer.style.position = 'fixed';
+    timerContainer.style.top = '20px';
+    timerContainer.style.left = '20px';
+    timerContainer.style.backgroundColor = '#e0f7ff';
+    timerContainer.style.borderRadius = '12px';
+    timerContainer.style.padding = '10px 15px';
+    timerContainer.style.zIndex = '9999';
+    timerContainer.style.fontSize = '20px';
+    timerContainer.style.color = '#333';
+    timerContainer.style.fontWeight = 'bold';
+    document.body.appendChild(timerContainer);
+
+    const timerDisplay = document.createElement('div');
+    timerContainer.appendChild(timerDisplay);
+
+    function checkForErrorMessage() {
         const errorText = "No pudimos encontrar ese informe";
-        const elements = Array.from(document.querySelectorAll('div, span, p'));
+        const elements = [...document.querySelectorAll('div, span, p')];
         const found = elements.some(el => el.textContent?.includes(errorText));
-
         if (found && !paused) {
             console.warn("Tablero roto detectado");
-            sendMail("Tablero Gerencia GSP falló", "Se detectó un tablero roto.");
-            addToNoSeVisualiza(currentUrl);
+            addToBlacklist(currentUrl);
+            sendMail("Tablero roto", "Este tablero falló y fue omitido.");
             setTimeout(() => rotateToNext(), 2000);
         }
     }
 
 
+// Guardá última ejecución en localStorage
+setInterval(() => {
+    localStorage.setItem("ultimo_ping", new Date().toISOString());
+}, 60000); // cada 1 minuto
 
+// === Sistema de heartbeat (vida del script) ===
+// Ping de vida cada 5 minutos al webhook externo
 
-
-    const container = createButtonContainer();
-    const timerContainer = createTimerContainer();
-    const stopButton = createButton('Detener', stopTimer);
-    const resumeButton = createButton('Reanudar', startTimer);
-    const timerDisplay = document.createElement('div');
-
-    container.appendChild(resumeButton);
-    container.appendChild(stopButton);
-    timerContainer.appendChild(timerDisplay);
+setInterval(() => {
+    fetch("https://script.google.com/macros/s/AKfycbyiswp9iASelbtTiiEEOxaNwvUw8GjuU9n9uvdbONiJbI3aqZA_Yk8vQ9tlzkTiCEZB/exec", {
+        method: "POST",
+        mode: "no-cors", // ← importante para evitar el error de CORS
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            origen: "Tableros GSP",
+            timestamp: new Date().toISOString()
+        })
+    })
+    .then(() => console.log("✅ Ping de vida enviado (modo no-cors)"))
+    .catch(err => console.error("❌ Error al enviar ping:", err));
+}, 0.2 * 60 * 1000); // cada 5 minutos
 
 
 
     setInterval(checkForErrorMessage, 5000);
     setButtonActive(resumeButton, stopButton);
     startTimer();
-
-
 })();
