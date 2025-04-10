@@ -1,12 +1,12 @@
 // ==UserScript==
 // @name         Tableros SI
 // @namespace    http://tampermonkey.net/
-// @version      1.21
+// @version      1.22
 // @description  Rotar enlaces con opción de pausa y reanudación mediante botones visibles, con contador de tiempo fluido.
 // @author       Tú
 // @match        https://app.powerbi.com/*
-// @updateURL    https://github.com/TrenesArgentinosSI/Tableros_BI/raw/refs/heads/main/Tableros%20SI.js
-// @downloadURL  https://github.com/TrenesArgentinosSI/Tableros_BI/raw/refs/heads/main/Tableros%20SI.js
+// @updateURL    https://raw.githubusercontent.com/TrenesArgentinosSI/Tableros_BI/refs/heads/main/Tableros%20SI.js
+// @downloadURL  https://raw.githubusercontent.com/TrenesArgentinosSI/Tableros_BI/refs/heads/main/Tableros%20SI.js
 // ==/UserScript==
 (function() {
     'use strict';
