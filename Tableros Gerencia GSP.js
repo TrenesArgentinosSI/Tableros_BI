@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Tableros Gerencia GSP
 // @namespace    http://tampermonkey.net/
-// @version      1.33
+// @version      1.34
 // @description  Rotacion de tableros con avisos
 // @author       Tú
 // @match        https://app.powerbi.com/*
@@ -109,7 +109,7 @@
         return;
     }
 
-    const rotationTime = { seconds: 20, minutes: 0, hours: 0 };
+    const rotationTime = { seconds: 0, minutes: 5, hours: 0 };
     const delay = (rotationTime.seconds || 0) * 1000 +
         (rotationTime.minutes || 0) * 60 * 1000 +
         (rotationTime.hours || 0) * 60 * 60 * 1000;
