@@ -109,7 +109,7 @@
         return;
     }
 
-    const rotationTime = { seconds: 0, minutes: 5, hours: 0 };
+    const rotationTime = { seconds: 0, minutes: 10, hours: 0 };
     const delay = (rotationTime.seconds || 0) * 1000 +
         (rotationTime.minutes || 0) * 60 * 1000 +
         (rotationTime.hours || 0) * 60 * 60 * 1000;
