@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Tableros Gerencia GSP
 // @namespace    http://tampermonkey.net/
-// @version      1.10
+// @version      1.33
 // @description  Rotacion de tableros con avisos
 // @author       Tú
 // @match        https://app.powerbi.com/*
