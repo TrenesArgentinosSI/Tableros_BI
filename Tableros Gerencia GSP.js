@@ -5,8 +5,8 @@
 // @description  Rotacion de tableros con avisos
 // @author       Tú
 // @match        https://app.powerbi.com/*
-// @updateURL    https://github.com/TrenesArgentinosSI/Tableros_BI/raw/refs/heads/main/Tableros%20Gerencia%20GSP.js
-// @downloadURL  https://github.com/TrenesArgentinosSI/Tableros_BI/raw/refs/heads/main/Tableros%20Gerencia%20GSP.js
+// @updateURL    https://raw.githubusercontent.com/TrenesArgentinosSI/Tableros_BI/refs/heads/main/Tableros%20Gerencia%20GSP.js
+// @downloadURL  https://raw.githubusercontent.com/TrenesArgentinosSI/Tableros_BI/refs/heads/main/Tableros%20Gerencia%20GSP.js
 // ==/UserScript==
 (function () {
     'use strict';
