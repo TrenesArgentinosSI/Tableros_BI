@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Tableros SI
 // @namespace    http://tampermonkey.net/
-// @version      1.23
+// @version      1.24
 // @description  Rotar enlaces con opción de pausa y reanudación mediante botones visibles, con contador de tiempo fluido.
 // @author       Tú
 // @match        https://app.powerbi.com/*
@@ -276,7 +276,7 @@ setInterval(() => {
     })
     .then(() => console.log("✅ Ping de vida enviado (modo no-cors)"))
     .catch(err => console.error("❌ Error al enviar ping:", err));
-}, 0.2 * 60 * 1000); // cada 5 minutos
+}, 10 * 60 * 1000); // cada 5 minutos
 
 
 
