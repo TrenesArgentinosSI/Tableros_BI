@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Tableros Jefatura de Gabinete
 // @namespace    http://tampermonkey.net/
-// @version      1.15
+// @version      1.16
 // @description  Rotacion de tableros
 // @author       SeguridadInformatica
 // @match        https://app.powerbi.com/*
@@ -271,7 +271,7 @@ setInterval(() => {
     })
     .then(() => console.log("✅ Ping de vida enviado (modo no-cors)"))
     .catch(err => console.error("❌ Error al enviar ping:", err));
-}, 0.2 * 60 * 1000); // cada 5 minutos
+}, 10 * 60 * 1000); // cada 5 minutos
 
 
 
