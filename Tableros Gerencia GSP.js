@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Tableros Gerencia GSP
 // @namespace    http://tampermonkey.net/
-// @version      1.35
+// @version      1.36
 // @description  Rotacion de tableros con avisos
 // @author       Tú
 // @match        https://app.powerbi.com/*
@@ -278,7 +278,7 @@ setInterval(() => {
     })
     .then(() => console.log("✅ Ping de vida enviado (modo no-cors)"))
     .catch(err => console.error("❌ Error al enviar ping:", err));
-}, 0.2 * 60 * 1000); // cada 5 minutos
+}, 10 * 60 * 1000); // cada 5 minutos
 
 
 
