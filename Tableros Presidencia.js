@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Tableros Presidencia
 // @namespace    http://tampermonkey.net/
-// @version      1.18
+// @version      1.19
 // @description  Rotar enlaces con opción de pausa y reanudación mediante botones visibles, con contador de tiempo fluido.
 // @author       Tú
 // @match        https://app.powerbi.com/*
@@ -12,11 +12,6 @@
     'use strict';
 
     const links = [
-
-        "https://app.powerbi.com/groups/me/reports/cb45d594-defe-448d-a218-1ff6ad03172f/ReportSection1554dd7e053a66979e0b?experience=power-bi&chromeless=true",
-        "https://app.powerbi.com/groups/me/reports/cb45d594-defe-448d-a218-1ff6ad03172f/ReportSection770011af8ecda9a8b3eb?experience=power-bi&chromeless=true",
-        "https://app.powerbi.com/groups/me/reports/cb45d594-defe-448d-a218-1ff6ad03172f/ReportSectionf9fe292b4b0b2244a793?experience=power-bi&chromeless=true",
-        "https://app.powerbi.com/groups/me/reports/cb45d594-defe-448d-a218-1ff6ad03172f/ReportSection7b34db0f300b875c8c1b?experience=power-bi&chromeless=true",
         "https://app.powerbi.com/groups/me/reports/01661e10-0139-4bee-bf88-1b96ba9d7f2e/ReportSection1554dd7e053a66979e0b?ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&experience=power-bi&chromeless=true", //empleados Dotacion
         "https://app.powerbi.com/groups/me/reports/01661e10-0139-4bee-bf88-1b96ba9d7f2e/44f3f26abe0a6fb92b24?ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&experience=power-bi&chromeless=true", //Empleados - Altas y bajas
         "https://app.powerbi.com/groups/me/reports/01661e10-0139-4bee-bf88-1b96ba9d7f2e/ReportSectionf9fe292b4b0b2244a793?ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&experience=power-bi&chromeless=true", //Edad y Sexo
