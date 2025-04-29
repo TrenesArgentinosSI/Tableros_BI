@@ -1,0 +1,13 @@
+{
+  "version": "1.1",
+  "grupo": "Tableros Jefatura de Gabinete",
+  "tiempo": 300,
+  "urls":[ 
+       "https://app.powerbi.com/groups/me/reports/01661e10-0139-4bee-bf88-1b96ba9d7f2e/ReportSection1554dd7e053a66979e0b?ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&experience=power-bi&chromeless=true",
+        "https://app.powerbi.com/groups/me/reports/01661e10-0139-4bee-bf88-1b96ba9d7f2e/44f3f26abe0a6fb92b24?ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&experience=power-bi&chromeless=true",
+        "https://app.powerbi.com/groups/me/reports/01661e10-0139-4bee-bf88-1b96ba9d7f2e/ReportSectionf9fe292b4b0b2244a793?ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&experience=power-bi&chromeless=true",
+        "https://app.powerbi.com/groups/me/reports/01661e10-0139-4bee-bf88-1b96ba9d7f2e/ReportSection7b34db0f300b875c8c1b?ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&experience=power-bi&chromeless=true",
+        "https://app.powerbi.com/groups/5320e04e-ab1f-4e12-9ab3-230f02c65d17/reports/f542c10d-bc0a-41be-8983-9a6b9f25ccb2/56ad26d522ccc2e3b89c?ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&experience=power-bi&chromeless=true",
+        "https://app.powerbi.com/groups/5320e04e-ab1f-4e12-9ab3-230f02c65d17/reports/f542c10d-bc0a-41be-8983-9a6b9f25ccb2/39641eae0b32fe7ea9da?ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&experience=power-bi&chromeless=true"
+   ]
+}
