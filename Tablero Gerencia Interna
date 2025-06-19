@@ -1,7 +1,7 @@
 {
-  "version": "2.2",
+  "version": "2.3",
   "grupo": "Tableros Gerencia",
-  "tiempo": 300,
+  "tiempo": 200,
   "urls":[
   "https://app.powerbi.com/reportEmbed?reportId=7e9d3785-efd4-4ba6-86b2-e6890eaf9efc&groupId=630bc243-2261-4e9d-9739-12919cf2727e&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&chromeless=true&filterPaneEnabled=false",
   "https://app.powerbi.com/reportEmbed?reportId=82b9efd6-ed22-472f-95e9-336547f995f1&groupId=630bc243-2261-4e9d-9739-12919cf2727e&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&chromeless=true&filterPaneEnabled=false",
