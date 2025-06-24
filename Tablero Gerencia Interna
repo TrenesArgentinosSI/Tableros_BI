@@ -1,22 +1,17 @@
 {
-  "version": "2.3",
+  "version": "2.4",
   "grupo": "Tableros Gerencia",
-  "tiempo": 200,
-  "urls":[
-  "https://app.powerbi.com/reportEmbed?reportId=7e9d3785-efd4-4ba6-86b2-e6890eaf9efc&groupId=630bc243-2261-4e9d-9739-12919cf2727e&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&chromeless=true&filterPaneEnabled=false",
-  "https://app.powerbi.com/reportEmbed?reportId=82b9efd6-ed22-472f-95e9-336547f995f1&groupId=630bc243-2261-4e9d-9739-12919cf2727e&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&chromeless=true&filterPaneEnabled=false",
-  "https://app.powerbi.com/reportEmbed?reportId=79f67593-bef4-4cdf-a865-11e92d41571b&groupId=630bc243-2261-4e9d-9739-12919cf2727e&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&chromeless=true&filterPaneEnabled=false",
-  "https://app.powerbi.com/reportEmbed?reportId=3d207542-1bcb-4557-a2e1-4a195a66ebef&groupId=630bc243-2261-4e9d-9739-12919cf2727e&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&chromeless=true&filterPaneEnabled=false",
-  "https://app.powerbi.com/reportEmbed?reportId=8621cbc9-5df9-4822-b32d-aa3c5c54a7bd&groupId=630bc243-2261-4e9d-9739-12919cf2727e&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&chromeless=true&filterPaneEnabled=false",
-  "https://app.powerbi.com/reportEmbed?reportId=cb45d594-defe-448d-a218-1ff6ad03172f&groupId=630bc243-2261-4e9d-9739-12919cf2727e&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&chromeless=true&filterPaneEnabled=false",
-  "https://app.powerbi.com/reportEmbed?reportId=f542c10d-bc0a-41be-8983-9a6b9f25ccb2&groupId=630bc243-2261-4e9d-9739-12919cf2727e&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&chromeless=true&filterPaneEnabled=false",
-  "https://app.powerbi.com/reportEmbed?reportId=01661e10-0139-4bee-bf88-1b96ba9d7f2e&groupId=647f43d9-54a1-47ee-9e78-604bb84ac9ff&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&chromeless=true&filterPaneEnabled=false",
-  "https://app.powerbi.com/reportEmbed?reportId=01661e10-0139-4bee-bf88-1b96ba9d7f2e&groupId=647f43d9-54a1-47ee-9e78-604bb84ac9ff&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&chromeless=true&filterPaneEnabled=false",
-  "https://app.powerbi.com/reportEmbed?reportId=01661e10-0139-4bee-bf88-1b96ba9d7f2e&groupId=647f43d9-54a1-47ee-9e78-604bb84ac9ff&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&chromeless=true&filterPaneEnabled=false",
-  "https://app.powerbi.com/reportEmbed?reportId=21a516ff-cf87-4f8d-b512-f41c28852417&groupId=647f43d9-54a1-47ee-9e78-604bb84ac9ff&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&chromeless=true&filterPaneEnabled=false",
-  "https://app.powerbi.com/reportEmbed?reportId=21a516ff-cf87-4f8d-b512-f41c28852417&groupId=647f43d9-54a1-47ee-9e78-604bb84ac9ff&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&chromeless=true&filterPaneEnabled=false",
-  "https://app.powerbi.com/reportEmbed?reportId=c3fbb4b1-3ed9-4ab1-b745-ff1a335a0321&groupId=647f43d9-54a1-47ee-9e78-604bb84ac9ff&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&chromeless=true&filterPaneEnabled=false",
-  "https://app.powerbi.com/reportEmbed?reportId=c3fbb4b1-3ed9-4ab1-b745-ff1a335a0321&groupId=647f43d9-54a1-47ee-9e78-604bb84ac9ff&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&chromeless=true&filterPaneEnabled=false",
-  "https://app.powerbi.com/reportEmbed?reportId=034960de-f6a9-4980-8efe-cea3da6c5265&groupId=647f43d9-54a1-47ee-9e78-604bb84ac9ff&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&chromeless=true&filterPaneEnabled=false"
+  "tiempo": 300,
+  "urls": [
+  "https://app.powerbi.com/groups/647f43d9-54a1-47ee-9e78-604bb84ac9ff/reports/034960de-f6a9-4980-8efe-cea3da6c5265/662ee63b8e890d793407?experience=power-bi&autoAuth=true&chromeless=true&filterPaneEnabled=false",
+  "https://app.powerbi.com/groups/647f43d9-54a1-47ee-9e78-604bb84ac9ff/reports/c3fbb4b1-3ed9-4ab1-b745-ff1a335a0321/ReportSection?experience=power-bi&autoAuth=true&chromeless=true&filterPaneEnabled=false",
+  "https://app.powerbi.com/groups/647f43d9-54a1-47ee-9e78-604bb84ac9ff/reports/c3fbb4b1-3ed9-4ab1-b745-ff1a335a0321/e52c179bdae57c8414a5?experience=power-bi&autoAuth=true&chromeless=true&filterPaneEnabled=false",
+  "https://app.powerbi.com/groups/647f43d9-54a1-47ee-9e78-604bb84ac9ff/reports/01661e10-0139-4bee-bf88-1b96ba9d7f2e/ReportSection1554dd7e053a66979e0b?experience=power-bi&autoAuth=true&chromeless=true&filterPaneEnabled=false",
+  "https://app.powerbi.com/groups/647f43d9-54a1-47ee-9e78-604bb84ac9ff/reports/01661e10-0139-4bee-bf88-1b96ba9d7f2e/44f3f26abe0a6fb92b24?experience=power-bi&autoAuth=true&chromeless=true&filterPaneEnabled=false",
+  "https://app.powerbi.com/groups/647f43d9-54a1-47ee-9e78-604bb84ac9ff/reports/01661e10-0139-4bee-bf88-1b96ba9d7f2e/ReportSectionf9fe292b4b0b2244a793?experience=power-bi&autoAuth=true&chromeless=true&filterPaneEnabled=false",
+  "https://app.powerbi.com/groups/647f43d9-54a1-47ee-9e78-604bb84ac9ff/reports/01661e10-0139-4bee-bf88-1b96ba9d7f2e/ReportSection7b34db0f300b875c8c1b?experience=power-bi&autoAuth=true&chromeless=true&filterPaneEnabled=false",
+  "https://app.powerbi.com/groups/647f43d9-54a1-47ee-9e78-604bb84ac9ff/reports/23c0d48c-f1a9-4df8-80cf-a3924bcb0d8b/062ffe712aa4bd8b1c04?experience=power-bi&autoAuth=true&chromeless=true&filterPaneEnabled=false",
+  "https://app.powerbi.com/groups/647f43d9-54a1-47ee-9e78-604bb84ac9ff/reports/23c0d48c-f1a9-4df8-80cf-a3924bcb0d8b/c478fb2092d06e1a7397?experience=power-bi&autoAuth=true&chromeless=true&filterPaneEnabled=false",
+  "https://app.powerbi.com/groups/630bc243-2261-4e9d-9739-12919cf2727e/reports/8621cbc9-5df9-4822-b32d-aa3c5c54a7bd/ReportSection?experience=power-bi&autoAuth=true&chromeless=true&filterPaneEnabled=false"
 ]
 }
