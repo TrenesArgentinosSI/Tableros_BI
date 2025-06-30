@@ -1,5 +1,5 @@
 {
-  "version": "2.4",
+  "version": "2.5",
   "grupo": "Tableros Gerencia",
   "tiempo": 300,
   "urls": [
@@ -11,7 +11,6 @@
   "https://app.powerbi.com/groups/647f43d9-54a1-47ee-9e78-604bb84ac9ff/reports/01661e10-0139-4bee-bf88-1b96ba9d7f2e/ReportSectionf9fe292b4b0b2244a793?experience=power-bi&autoAuth=true&chromeless=true&filterPaneEnabled=false",
   "https://app.powerbi.com/groups/647f43d9-54a1-47ee-9e78-604bb84ac9ff/reports/01661e10-0139-4bee-bf88-1b96ba9d7f2e/ReportSection7b34db0f300b875c8c1b?experience=power-bi&autoAuth=true&chromeless=true&filterPaneEnabled=false",
   "https://app.powerbi.com/groups/647f43d9-54a1-47ee-9e78-604bb84ac9ff/reports/23c0d48c-f1a9-4df8-80cf-a3924bcb0d8b/062ffe712aa4bd8b1c04?experience=power-bi&autoAuth=true&chromeless=true&filterPaneEnabled=false",
-  "https://app.powerbi.com/groups/647f43d9-54a1-47ee-9e78-604bb84ac9ff/reports/23c0d48c-f1a9-4df8-80cf-a3924bcb0d8b/c478fb2092d06e1a7397?experience=power-bi&autoAuth=true&chromeless=true&filterPaneEnabled=false",
-  "https://app.powerbi.com/groups/630bc243-2261-4e9d-9739-12919cf2727e/reports/8621cbc9-5df9-4822-b32d-aa3c5c54a7bd/ReportSection?experience=power-bi&autoAuth=true&chromeless=true&filterPaneEnabled=false"
+  "https://app.powerbi.com/groups/647f43d9-54a1-47ee-9e78-604bb84ac9ff/reports/23c0d48c-f1a9-4df8-80cf-a3924bcb0d8b/c478fb2092d06e1a7397?experience=power-bi&autoAuth=true&chromeless=true&filterPaneEnabled=false"
 ]
 }
