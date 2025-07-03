@@ -1,6 +1,6 @@
 
 {
-  "version": "1.5",
+  "version": "1.6",
   "grupo": "Tableros pruebas",
   "tiempo": 20,
   "urls":[ 
@@ -13,3 +13,6 @@
         "https://app.powerbi.com/groups/me/reports/f542c10d-bc0a-41be-8983-9a6b9f25ccb2/56ad26d522ccc2e3b89c?ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&experience=power-bi&chromeless=true"
    ]
 }
+
+
+//resumen ejecutivo
