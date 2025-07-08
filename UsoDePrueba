@@ -1,6 +1,6 @@
 {
-  "version": "1.8",
-  "grupo": "PC de Pruebas",
+  "version": "1.9",
+  "pc": "PC de Gerencia",
   "tiempo": 20,
   "urls": [
     {
