@@ -1,5 +1,5 @@
 {
-  "version": "1.1",
+  "version": "1.2",
   "pc": "PC de SI",
   "tiempo": 300,
   "urls": [
@@ -8,16 +8,16 @@
       "url": "https://app.powerbi.com/groups/630bc243-2261-4e9d-9739-12919cf2727e/reports/79f67593-bef4-4cdf-a865-11e92d41571b/ReportSection?experience=power-bi&chromeless=true"
     },
     {
-      "nombre": "ANALITICA INCIDENTES SOLMAN",
+      "nombre": "ANALITICA INCIDENTES SOLMAN ",
       "url": "https://app.powerbi.com/groups/630bc243-2261-4e9d-9739-12919cf2727e/reports/a4b2469c-be68-49de-bfe9-42725e9727b5/ReportSection9f5773471b3b9b34f190?ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&experience=power-bi&chromeless=true"
     },
     {
-      "nombre": "ANALITICA INCIDENTES SOLMAN",
+      "nombre": "ANALITICA INCIDENTES SOLMAN - ANTIGUEDAD",
       "url": "https://app.powerbi.com/groups/630bc243-2261-4e9d-9739-12919cf2727e/reports/a4b2469c-be68-49de-bfe9-42725e9727b5/41a6033226e614b4ac90?ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&experience=power-bi&chromeless=true"
     },
     {
       "nombre": "DETALLE AUDITORIA",
-      "url": "https://app.powerbi.com/groups/630bc243-2261-4e9d-9739-12919cf2727e/reports/10a2d2c5-0dd0-45c6-99f1-b96fd4aa3fef/555f899c2780a87ca5dc?experience=power-bi&chromeless=true"
+      "url": "https://app.powerbi.com/groups/630bc243-2261-4e9d-9739-12919cf2727e/reports/10a2d2c5-0dd0-45c6-99f1-b96fd4aa3fef/0fe0752f940c0cf4e34b?experience=power-bi&chromeless=true"
     },
     {
       "nombre": "PERMISOS PBI",
@@ -34,6 +34,14 @@
     {
       "nombre": "SI INCIDENTES F5",
       "url": "https://app.powerbi.com/groups/630bc243-2261-4e9d-9739-12919cf2727e/reports/8621cbc9-5df9-4822-b32d-aa3c5c54a7bd/3f59c63e62ec2e696753?experience=power-bi&chromeless=true"
+    },
+    {
+      "nombre": "INCIDENTES FORTISIEM",
+      "url": "https://app.powerbi.com/groups/630bc243-2261-4e9d-9739-12919cf2727e/reports/837240a1-7c39-4837-8c0e-13c3743c2440/ReportSection8243467cb96eb2d14391?experience=power-bi&chromeless=true"
+    },
+    {
+      "nombre": "INCIDENETES WAF",
+      "url": "https://app.powerbi.com/groups/630bc243-2261-4e9d-9739-12919cf2727e/reports/8621cbc9-5df9-4822-b32d-aa3c5c54a7bd/ReportSection342bbbb6c11e90005082?experience=power-bi&chromeless=true"
     }
   ]
 }
