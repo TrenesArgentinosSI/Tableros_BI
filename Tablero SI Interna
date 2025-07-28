@@ -1,5 +1,5 @@
 {
-  "version": "2.1",
+  "version": "1.4",
   "pc": "PC de SI",
   "tiempo": 300,
   "urls": [
@@ -34,6 +34,10 @@
     {
       "nombre": "INCIDENTES FORTISIEM",
       "url": "https://app.powerbi.com/groups/630bc243-2261-4e9d-9739-12919cf2727e/reports/837240a1-7c39-4837-8c0e-13c3743c2440/ReportSection8243467cb96eb2d14391?experience=power-bi&chromeless=true"
+    },
+    {
+      "nombre": "Inventario",
+     "url": "https://app.powerbi.com/groups/630bc243-2261-4e9d-9739-12919cf2727e/reports/df03cb3d-f643-437f-a4df-41e2098caeb6/ReportSection?ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&experience=power-bi&chromeless=true"
     },
     {
       "nombre": "INCIDENETES WAF",
