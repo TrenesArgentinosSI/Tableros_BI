@@ -1,5 +1,5 @@
 {
-  "version": "1.5",
+  "version": "1.6",
   "pc": "PC de SI",
   "tiempo": 300,
   "urls": [
@@ -18,6 +18,10 @@
     {
       "nombre": "DETALLE AUDITORIA",
       "url": "https://app.powerbi.com/groups/630bc243-2261-4e9d-9739-12919cf2727e/reports/10a2d2c5-0dd0-45c6-99f1-b96fd4aa3fef/0fe0752f940c0cf4e34b?experience=power-bi&chromeless=true"
+    },
+    {
+      "nombre": "Inventario",
+      "https://app.powerbi.com/groups/630bc243-2261-4e9d-9739-12919cf2727e/reports/df03cb3d-f643-437f-a4df-41e2098caeb6/ReportSection?ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&experience=power-bi&chromeless=true"
     },
     {
       "nombre": "TABLERO PSI",
