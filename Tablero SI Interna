@@ -1,15 +1,11 @@
 {
-  "version": "1.4",
+  "version": "1.5",
   "pc": "PC de SI",
   "tiempo": 300,
   "urls": [
     {
       "nombre": "RIESGOS GRC",
       "url": "https://app.powerbi.com/groups/630bc243-2261-4e9d-9739-12919cf2727e/reports/79f67593-bef4-4cdf-a865-11e92d41571b/ReportSection?experience=power-bi&chromeless=true"
-    },
-    {
-      "nombre": "ANALITICA INCIDENTES SOLMAN ",
-      "url": "https://app.powerbi.com/groups/630bc243-2261-4e9d-9739-12919cf2727e/reports/a4b2469c-be68-49de-bfe9-42725e9727b5/ReportSection9f5773471b3b9b34f190?ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&experience=power-bi&chromeless=true"
     },
     {
       "nombre": "ANALITICA INCIDENTES SOLMAN - ANTIGUEDAD",
