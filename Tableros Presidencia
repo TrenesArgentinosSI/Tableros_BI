@@ -1,0 +1,23 @@
+{
+  "version": "1.1",
+  "pc": "PC de Presidencia",
+  "tiempo": 300,
+  "urls": [
+    {
+      "nombre": "DOTACION ACTUAL",
+      "url": "https://app.powerbi.com/groups/11fb499e-4956-4ae0-b5e3-966f0f2dd308/reports/d6f928a8-d1cc-49cf-bf54-a98395b350fe/ReportSection1554dd7e053a66979e0b?ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&experience=power-bi&chromeless=true"
+    },
+    {
+      "nombre": "ALTAS Y BAJAS",
+      "url": "https://app.powerbi.com/groups/me/reports/01661e10-0139-4bee-bf88-1b96ba9d7f2e/44f3f26abe0a6fb92b24?ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&experience=power-bi&chromeless=true"
+    },
+    {
+      "nombre": "EDAD Y SEXO",
+      "url": "https://app.powerbi.com/groups/me/reports/01661e10-0139-4bee-bf88-1b96ba9d7f2e/ReportSectionf9fe292b4b0b2244a793?ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&experience=power-bi&chromeless=true"
+    },
+    {
+      "nombre": "REPORTE DETALLE RECARGAS",
+      "url": "https://app.powerbi.com/groups/5320e04e-ab1f-4e12-9ab3-230f02c65d17/reports/f542c10d-bc0a-41be-8983-9a6b9f25ccb2/39641eae0b32fe7ea9da?ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&experience=power-bi&chromeless=true"
+    }
+  ]
+}
