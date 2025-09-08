@@ -1,47 +1,47 @@
 {
-  "version": "1.6",
+  "version": "1.7",
   "pc": "PC de SI",
   "tiempo": 300,
   "urls": [
     {
       "nombre": "RIESGOS GRC",
-      "url": "https://app.powerbi.com/groups/630bc243-2261-4e9d-9739-12919cf2727e/reports/79f67593-bef4-4cdf-a865-11e92d41571b/ReportSection?experience=power-bi&chromeless=true"
+      "url": "https://app.powerbi.com/reportEmbed?reportId=79f67593-bef4-4cdf-a865-11e92d41571b&groupId=630bc243-2261-4e9d-9739-12919cf2727e&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true"
     },
     {
       "nombre": "ANALITICA INCIDENTES SOLMAN - ANTIGUEDAD",
-      "url": "https://app.powerbi.com/groups/630bc243-2261-4e9d-9739-12919cf2727e/reports/a4b2469c-be68-49de-bfe9-42725e9727b5/41a6033226e614b4ac90?ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&experience=power-bi&chromeless=true"
+      "url": "https://app.powerbi.com/reportEmbed?reportId=a4b2469c-be68-49de-bfe9-42725e9727b5&groupId=630bc243-2261-4e9d-9739-12919cf2727e&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true"
     },
     {
       "nombre": "DETALLE AUDITORIA",
-      "url": "https://app.powerbi.com/groups/630bc243-2261-4e9d-9739-12919cf2727e/reports/10a2d2c5-0dd0-45c6-99f1-b96fd4aa3fef/0fe0752f940c0cf4e34b?experience=power-bi&chromeless=true"
+      "url": "https://app.powerbi.com/reportEmbed?reportId=10a2d2c5-0dd0-45c6-99f1-b96fd4aa3fef&groupId=630bc243-2261-4e9d-9739-12919cf2727e&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true"
     },
     {
       "nombre": "TABLERO PSI",
-      "url": "https://app.powerbi.com/groups/630bc243-2261-4e9d-9739-12919cf2727e/reports/7e9d3785-efd4-4ba6-86b2-e6890eaf9efc/ReportSection020b3c6bb1de02141e39?experience=power-bi&chromeless=true"
+      "url": "https://app.powerbi.com/reportEmbed?reportId=7e9d3785-efd4-4ba6-86b2-e6890eaf9efc&groupId=630bc243-2261-4e9d-9739-12919cf2727e&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true&pageName=ReportSection020b3c6bb1de02141e39"
     },
     {
       "nombre": "DOCUMENTACION SI",
-      "url": "https://app.powerbi.com/groups/630bc243-2261-4e9d-9739-12919cf2727e/reports/3a35687e-209a-468f-aca7-da613b981041/fcbe49cbdd6c24f455ea?experience=power-bi&chromeless=true"
+      "url": "https://app.powerbi.com/reportEmbed?reportId=3a35687e-209a-468f-aca7-da613b981041&groupId=630bc243-2261-4e9d-9739-12919cf2727e&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true"
     },
     {
       "nombre": "DOCUMENTACION MDA",
-      "url": "https://app.powerbi.com/groups/a29be703-4cea-480d-8877-ea2c4734f4f4/reports/9ee2da4b-bd16-4b82-81ef-f0575a49d206/fcbe49cbdd6c24f455ea?experience=power-bi&chromeless=true"
+      "url": "https://app.powerbi.com/reportEmbed?reportId=9ee2da4b-bd16-4b82-81ef-f0575a49d206&groupId=a29be703-4cea-480d-8877-ea2c4734f4f4&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true"
     },
     {
       "nombre": "SI INCIDENTES F5",
-      "url": "https://app.powerbi.com/groups/630bc243-2261-4e9d-9739-12919cf2727e/reports/8621cbc9-5df9-4822-b32d-aa3c5c54a7bd/3f59c63e62ec2e696753?experience=power-bi&chromeless=true"
+      "url": "https://app.powerbi.com/reportEmbed?reportId=8621cbc9-5df9-4822-b32d-aa3c5c54a7bd&groupId=630bc243-2261-4e9d-9739-12919cf2727e&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true"
     },
     {
       "nombre": "INCIDENTES FORTISIEM",
-      "url": "https://app.powerbi.com/groups/630bc243-2261-4e9d-9739-12919cf2727e/reports/837240a1-7c39-4837-8c0e-13c3743c2440/ReportSection8243467cb96eb2d14391?experience=power-bi&chromeless=true"
+      "url": "https://app.powerbi.com/reportEmbed?reportId=837240a1-7c39-4837-8c0e-13c3743c2440&groupId=630bc243-2261-4e9d-9739-12919cf2727e&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true&pageName=ReportSection8243467cb96eb2d14391"
     },
     {
       "nombre": "Inventario",
-     "url": "https://app.powerbi.com/groups/630bc243-2261-4e9d-9739-12919cf2727e/reports/df03cb3d-f643-437f-a4df-41e2098caeb6/ReportSection?ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&experience=power-bi&chromeless=true"
+     "url": "https://app.powerbi.com/reportEmbed?reportId=df03cb3d-f643-437f-a4df-41e2098caeb6&groupId=630bc243-2261-4e9d-9739-12919cf2727e&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&navContentPaneEnabled=false&filt"
     },
     {
       "nombre": "INCIDENETES WAF",
-      "url": "https://app.powerbi.com/groups/630bc243-2261-4e9d-9739-12919cf2727e/reports/8621cbc9-5df9-4822-b32d-aa3c5c54a7bd/ReportSection342bbbb6c11e90005082?experience=power-bi&chromeless=true"
+      "url": "https://app.powerbi.com/reportEmbed?reportId=8621cbc9-5df9-4822-b32d-aa3c5c54a7bd&groupId=630bc243-2261-4e9d-9739-12919cf2727e&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true&pageName=ReportSection342bbbb6c11e90005082"
     }
   ]
 }
