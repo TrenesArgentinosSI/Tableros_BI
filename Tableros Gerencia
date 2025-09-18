@@ -1,5 +1,5 @@
 {
-  "version": "1.4",
+  "version": "1.5",
   "pc": "PC de Gerencia",
   "tiempo": 300,
   "urls": [
@@ -12,12 +12,12 @@
       "url": "https://app.powerbi.com/reportEmbed?reportId=95b7da4d-efda-405c-992f-3427a1207adf&groupId=a29be703-4cea-480d-8877-ea2c4734f4f4&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true&pageName=7733e4cc8420b26d7500"
     },
     {
-      "nombre": "FICHADAS PROCESADAS - INCUMPLIMIENTO",
-      "url": "https://app.powerbi.com/reportEmbed?reportId=c3fbb4b1-3ed9-4ab1-b745-ff1a335a0321&groupId=647f43d9-54a1-47ee-9e78-604bb84ac9ff&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true"
+      "nombre": "MDA PROMEDIOS FILTROS",
+      "url": "https://app.powerbi.com/reportEmbed?reportId=95b7da4d-efda-405c-992f-3427a1207adf&groupId=a29be703-4cea-480d-8877-ea2c4734f4f4&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true&pageName=399dadf0d240005ab79e"
     },
     {
-      "nombre": "FICHADAS PROCESADAS - PRESENCIAS",
-      "url": "https://app.powerbi.com/reportEmbed?reportId=c3fbb4b1-3ed9-4ab1-b745-ff1a335a0321&groupId=647f43d9-54a1-47ee-9e78-604bb84ac9ff&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true&pageName=e52c179bdae57c8414a5"
+      "nombre": "MDA Estado General",
+      "url": "https://app.powerbi.com/reportEmbed?reportId=95b7da4d-efda-405c-992f-3427a1207adf&groupId=a29be703-4cea-480d-8877-ea2c4734f4f4&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true&pageName=ReportSection245c9cb81305855023e3"
     },
     {
       "nombre": "INDICADORES DE GESTION PRD - DOTACION AL DIA ACTUAL",
