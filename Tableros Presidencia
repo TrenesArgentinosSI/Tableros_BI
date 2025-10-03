@@ -1,19 +1,19 @@
 {
-  "version": "1.2",
+  "version": "1.3",
   "pc": "PC de Presidencia",
   "tiempo": 300,
   "urls": [
     {
       "nombre": "DOTACION ACTUAL",
-      "url": "https://app.powerbi.com/reportEmbed?reportId=d6f928a8-d1cc-49cf-bf54-a98395b350fe&groupId=11fb499e-4956-4ae0-b5e3-966f0f2dd308&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true&pageName=ReportSection1554dd7e053a66979e0b"
+      "url": "https://app.powerbi.com/reportEmbed?reportId=6c8140ab-f038-4a86-b56c-4327ccecd15d&groupId=11fb499e-4956-4ae0-b5e3-966f0f2dd308&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true&pageName=ReportSection1554dd7e053a66979e0b"
     },
     {
       "nombre": "ALTAS Y BAJAS",
-      "url": "https://app.powerbi.com/reportEmbed?reportId=01661e10-0139-4bee-bf88-1b96ba9d7f2e&groupId=me&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true&pageName=44f3f26abe0a6fb92b24"
+      "url": "https://app.powerbi.com/reportEmbed?reportId=6c8140ab-f038-4a86-b56c-4327ccecd15d&groupId=11fb499e-4956-4ae0-b5e3-966f0f2dd308&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true&pageName=44f3f26abe0a6fb92b24"
     },
     {
       "nombre": "EDAD Y SEXO",
-      "url": "https://app.powerbi.com/reportEmbed?reportId=01661e10-0139-4bee-bf88-1b96ba9d7f2e&groupId=me&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true&pageName=ReportSectionf9fe292b4b0b2244a793"
+      "url": "https://app.powerbi.com/reportEmbed?reportId=6c8140ab-f038-4a86-b56c-4327ccecd15d&groupId=11fb499e-4956-4ae0-b5e3-966f0f2dd308&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true&pageName=ReportSectionf9fe292b4b0b2244a793"
     },
     {
       "nombre": "REPORTE DETALLE RECARGAS",
