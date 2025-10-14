@@ -1,5 +1,5 @@
 {
-  "version": "1.3",
+  "version": "1.4",
   "pc": "PC de Presidencia",
   "tiempo": 300,
   "urls": [
@@ -18,6 +18,20 @@
     {
       "nombre": "REPORTE DETALLE RECARGAS",
       "url": "https://app.powerbi.com/reportEmbed?reportId=f542c10d-bc0a-41be-8983-9a6b9f25ccb2&groupId=5320e04e-ab1f-4e12-9ab3-230f02c65d17&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true&pageName=39641eae0b32fe7ea9da"
+    }
+
+    {
+      "nombre": "Bajas presidencia",
+      "url": "https://app.powerbi.com/reportEmbed?reportId=6c8140ab-f038-4a86-b56c-4327ccecd15d&groupId=11fb499e-4956-4ae0-b5e3-966f0f2dd308&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true&pageName=625302a703df537f12da"
+    }
+
+    {
+      "nombre": "Bajas por línea",
+      "url": "https://app.powerbi.com/reportEmbed?reportId=6c8140ab-f038-4a86-b56c-4327ccecd15d&groupId=11fb499e-4956-4ae0-b5e3-966f0f2dd308&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true&pageName=ad04b27ec8e44a7bba14"
+    }
+    {
+      "nombre": "Bajas por tipo",
+      "url": "https://app.powerbi.com/reportEmbed?reportId=6c8140ab-f038-4a86-b56c-4327ccecd15d&groupId=11fb499e-4956-4ae0-b5e3-966f0f2dd308&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true&pageName=7c2f72114a8157d90890"
     }
   ]
 }
