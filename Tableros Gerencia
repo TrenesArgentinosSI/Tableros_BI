@@ -1,25 +1,8 @@
 {
-  "version": "1.8",
+  "version": "1.9",
   "pc": "PC de Gerencia",
   "tiempo": 300,
   "urls": [
-    {
-      "nombre": "MDA Promedios",
-      "url": "https://app.powerbi.com/reportEmbed?reportId=95b7da4d-efda-405c-992f-3427a1207adf&groupId=a29be703-4cea-480d-8877-ea2c4734f4f4&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true&pageName=31c06358870385ddc6ca"
-    },
-    {
-      "nombre": "Recaudaciones - Ventas ",
-      "url": "https://app.powerbi.com/reportEmbed?reportId=8ad10dfd-a0a2-45fb-b00f-521967f9e8bf&groupId=11fb499e-4956-4ae0-b5e3-966f0f2dd308&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true&pageName=2b428bc2bff00874c887"
-    },
-
- {
-      "nombre": "Recaudaciones - Pasajeros ",
-      "url": "https://app.powerbi.com/reportEmbed?reportId=8ad10dfd-a0a2-45fb-b00f-521967f9e8bf&groupId=11fb499e-4956-4ae0-b5e3-966f0f2dd308&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true&pageName=ba6bceab1e0ec78326a5"
-    },
- {
-      "nombre": "Recaudaciones - Tarifas ",
-      "url": "https://app.powerbi.com/reportEmbed?reportId=8ad10dfd-a0a2-45fb-b00f-521967f9e8bf&groupId=11fb499e-4956-4ae0-b5e3-966f0f2dd308&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true&pageName=28e4d0fb9574dfc91dc0"
-    },
     {
       "nombre": "MDA Areas",
       "url": "https://app.powerbi.com/reportEmbed?reportId=95b7da4d-efda-405c-992f-3427a1207adf&groupId=a29be703-4cea-480d-8877-ea2c4734f4f4&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true&pageName=7733e4cc8420b26d7500"
