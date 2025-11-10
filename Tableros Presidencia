@@ -1,60 +1,44 @@
 {
-  "version": "2.0",
-  "pc": "PC de Gerencia",
+  "version": "2.1",
+  "pc": "PC de Presidencia 1",
   "tiempo": 300,
   "urls": [
     {
-      "nombre": "MDA Promedios",
-      "url": "https://app.powerbi.com/reportEmbed?reportId=95b7da4d-efda-405c-992f-3427a1207adf&groupId=a29be703-4cea-480d-8877-ea2c4734f4f4&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true&pageName=31c06358870385ddc6ca"
-    },
-    {
-      "nombre": "Recaudaciones - Ventas",
+      "nombre": "Recaudaciones - Ventas ",
       "url": "https://app.powerbi.com/reportEmbed?reportId=8ad10dfd-a0a2-45fb-b00f-521967f9e8bf&groupId=11fb499e-4956-4ae0-b5e3-966f0f2dd308&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true&pageName=2b428bc2bff00874c887"
     },
-
  {
-      "nombre": "Recaudaciones - Pasajeros",
+      "nombre": "Recaudaciones - Pasajeros ",
       "url": "https://app.powerbi.com/reportEmbed?reportId=8ad10dfd-a0a2-45fb-b00f-521967f9e8bf&groupId=11fb499e-4956-4ae0-b5e3-966f0f2dd308&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true&pageName=ba6bceab1e0ec78326a5"
     },
  {
-      "nombre": "Recaudaciones - Tarifas",
+      "nombre": "Recaudaciones - Tarifas ",
       "url": "https://app.powerbi.com/reportEmbed?reportId=8ad10dfd-a0a2-45fb-b00f-521967f9e8bf&groupId=11fb499e-4956-4ae0-b5e3-966f0f2dd308&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true&pageName=28e4d0fb9574dfc91dc0"
     },
-    {
-      "nombre": "MDA Areas",
-      "url": "https://app.powerbi.com/reportEmbed?reportId=95b7da4d-efda-405c-992f-3427a1207adf&groupId=a29be703-4cea-480d-8877-ea2c4734f4f4&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true&pageName=7733e4cc8420b26d7500"
-    },
-    {
-      "nombre": "MDA PROMEDIOS FILTROS",
-      "url": "https://app.powerbi.com/reportEmbed?reportId=95b7da4d-efda-405c-992f-3427a1207adf&groupId=a29be703-4cea-480d-8877-ea2c4734f4f4&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true&pageName=399dadf0d240005ab79e"
-    },
-    {
-      "nombre": "MDA Estado General",
-      "url": "https://app.powerbi.com/reportEmbed?reportId=95b7da4d-efda-405c-992f-3427a1207adf&groupId=a29be703-4cea-480d-8877-ea2c4734f4f4&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true&pageName=ReportSection245c9cb81305855023e3"
-    },
-    {
-      "nombre": "INDICADORES DE GESTION PRD - DOTACION AL DIA ACTUAL",
+   {
+      "nombre": "DOTACION ACTUAL",
       "url": "https://app.powerbi.com/reportEmbed?reportId=6c8140ab-f038-4a86-b56c-4327ccecd15d&groupId=11fb499e-4956-4ae0-b5e3-966f0f2dd308&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true&pageName=ReportSection1554dd7e053a66979e0b"
     },
     {
-      "nombre": "INDICADORES DE GESTION PRD - ALTAS Y BAJAS",
+      "nombre": "ALTAS Y BAJAS",
       "url": "https://app.powerbi.com/reportEmbed?reportId=6c8140ab-f038-4a86-b56c-4327ccecd15d&groupId=11fb499e-4956-4ae0-b5e3-966f0f2dd308&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true&pageName=44f3f26abe0a6fb92b24"
     },
     {
-      "nombre": "INDICADORES DE GESTION PRD - EDAD Y SEXO",
+      "nombre": "EDAD Y SEXO",
       "url": "https://app.powerbi.com/reportEmbed?reportId=6c8140ab-f038-4a86-b56c-4327ccecd15d&groupId=11fb499e-4956-4ae0-b5e3-966f0f2dd308&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true&pageName=ReportSectionf9fe292b4b0b2244a793"
     },
     {
-      "nombre": "INDICADORES DE GESTION PRD - ANTIGUEDAD",
-      "url": "https://app.powerbi.com/reportEmbed?reportId=6c8140ab-f038-4a86-b56c-4327ccecd15d&groupId=11fb499e-4956-4ae0-b5e3-966f0f2dd308&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true&pageName=ReportSection7b34db0f300b875c8c1b"
+      "nombre": "Bajas presidencia",
+      "url": "https://app.powerbi.com/reportEmbed?reportId=6c8140ab-f038-4a86-b56c-4327ccecd15d&groupId=11fb499e-4956-4ae0-b5e3-966f0f2dd308&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true&pageName=625302a703df537f12da"
+    },
+
+    {
+      "nombre": "Bajas por línea",
+      "url": "https://app.powerbi.com/reportEmbed?reportId=6c8140ab-f038-4a86-b56c-4327ccecd15d&groupId=11fb499e-4956-4ae0-b5e3-966f0f2dd308&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true&pageName=ad04b27ec8e44a7bba14"
     },
     {
-      "nombre": "REPORTE DOTACION Y AUSENTISMO - DOTACION",
-      "url": "https://app.powerbi.com/reportEmbed?reportId=23c0d48c-f1a9-4df8-80cf-a3924bcb0d8b&groupId=647f43d9-54a1-47ee-9e78-604bb84ac9ff&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true&pageName=062ffe712aa4bd8b1c04"
-    },
-    {
-      "nombre": "REPORTE DOTACION Y AUSENTISMO - AUSENTISMO",
-      "url": "https://app.powerbi.com/reportEmbed?reportId=23c0d48c-f1a9-4df8-80cf-a3924bcb0d8b&groupId=647f43d9-54a1-47ee-9e78-604bb84ac9ff&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true&pageName=c478fb2092d06e1a7397"
+      "nombre": "Bajas por tipo",
+      "url": "https://app.powerbi.com/reportEmbed?reportId=6c8140ab-f038-4a86-b56c-4327ccecd15d&groupId=11fb499e-4956-4ae0-b5e3-966f0f2dd308&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true&pageName=7c2f72114a8157d90890"
     }
   ]
 }
