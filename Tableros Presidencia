@@ -1,5 +1,5 @@
 {
-  "version": "2.1",
+  "version": "2.2",
   "pc": "PC de Presidencia 1",
   "tiempo": 300,
   "urls": [
@@ -17,28 +17,28 @@
     },
    {
       "nombre": "DOTACION ACTUAL",
-      "url": "https://app.powerbi.com/reportEmbed?reportId=f56710c0-b23b-489b-b362-ac1b99daa06e&groupId=11fb499e-4956-4ae0-b5e3-966f0f2dd308&autoAuth=true&filterPaneEnabled=false&navContentPaneEnabled=false"
+      "url": "https://app.powerbi.com/reportEmbed?reportId=8922514e-cf63-4335-9eaa-750af8b88bbf&groupId=11fb499e-4956-4ae0-b5e3-966f0f2dd308&autoAuth=true&filterPaneEnabled=false&navContentPaneEnabled=false&pageName=ReportSection1554dd7e053a66979e0b"
     },
     {
       "nombre": "ALTAS Y BAJAS",
-      "url": "https://app.powerbi.com/reportEmbed?reportId=f56710c0-b23b-489b-b362-ac1b99daa06e&groupId=11fb499e-4956-4ae0-b5e3-966f0f2dd308&autoAuth=true&filterPaneEnabled=false&navContentPaneEnabled=false"
+      "url": "https://app.powerbi.com/reportEmbed?reportId=8922514e-cf63-4335-9eaa-750af8b88bbf&groupId=11fb499e-4956-4ae0-b5e3-966f0f2dd308&autoAuth=true&filterPaneEnabled=false&navContentPaneEnabled=false&pageName=44f3f26abe0a6fb92b24"
     },
     {
       "nombre": "EDAD Y SEXO",
-      "url": "https://app.powerbi.com/reportEmbed?reportId=f56710c0-b23b-489b-b362-ac1b99daa06e&groupId=11fb499e-4956-4ae0-b5e3-966f0f2dd308&autoAuth=true&filterPaneEnabled=false&navContentPaneEnabled=false&pageName=ReportSectionf9fe292b4b0b2244a793"
+      "url": "https://app.powerbi.com/reportEmbed?reportId=8922514e-cf63-4335-9eaa-750af8b88bbf&groupId=11fb499e-4956-4ae0-b5e3-966f0f2dd308&autoAuth=true&filterPaneEnabled=false&navContentPaneEnabled=false&pageName=ReportSectionf9fe292b4b0b2244a793"
     },
     {
       "nombre": "Bajas presidencia",
-      "url": "https://app.powerbi.com/reportEmbed?reportId=f56710c0-b23b-489b-b362-ac1b99daa06e&groupId=11fb499e-4956-4ae0-b5e3-966f0f2dd308&autoAuth=true&filterPaneEnabled=false&navContentPaneEnabled=false&pageName=625302a703df537f12da"
+      "url": "https://app.powerbi.com/reportEmbed?reportId=8922514e-cf63-4335-9eaa-750af8b88bbf&groupId=11fb499e-4956-4ae0-b5e3-966f0f2dd308&autoAuth=true&filterPaneEnabled=false&navContentPaneEnabled=false&pageName=625302a703df537f12da"
     },
 
     {
       "nombre": "Bajas por línea",
-      "url": "https://app.powerbi.com/reportEmbed?reportId=f56710c0-b23b-489b-b362-ac1b99daa06e&groupId=11fb499e-4956-4ae0-b5e3-966f0f2dd308&autoAuth=true&filterPaneEnabled=false&navContentPaneEnabled=false&pageName=ad04b27ec8e44a7bba14"
+      "url": "https://app.powerbi.com/reportEmbed?reportId=8922514e-cf63-4335-9eaa-750af8b88bbf&groupId=11fb499e-4956-4ae0-b5e3-966f0f2dd308&autoAuth=true&filterPaneEnabled=false&navContentPaneEnabled=false&pageName=ad04b27ec8e44a7bba14"
     },
     {
       "nombre": "Bajas por tipo",
-      "url": "https://app.powerbi.com/reportEmbed?reportId=f56710c0-b23b-489b-b362-ac1b99daa06e&groupId=11fb499e-4956-4ae0-b5e3-966f0f2dd308&autoAuth=true&filterPaneEnabled=false&navContentPaneEnabled=false&pageName=7c2f72114a8157d90890"
+      "url": "https://app.powerbi.com/reportEmbed?reportId=8922514e-cf63-4335-9eaa-750af8b88bbf&groupId=11fb499e-4956-4ae0-b5e3-966f0f2dd308&autoAuth=true&filterPaneEnabled=false&navContentPaneEnabled=false&pageName=7c2f72114a8157d90890"
     }
   ]
 }
