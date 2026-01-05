@@ -1,5 +1,5 @@
 {
-  "version": "1.7",
+  "version": "1.8",
   "pc": "PC de SI",
   "tiempo": 300,
   "urls": [
@@ -37,7 +37,7 @@
     },
     {
       "nombre": "Inventario",
-     "url": "https://app.powerbi.com/reportEmbed?reportId=df03cb3d-f643-437f-a4df-41e2098caeb6&groupId=630bc243-2261-4e9d-9739-12919cf2727e&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&navContentPaneEnabled=false&filt"
+     "url": "https://app.powerbi.com/reportEmbed?reportId=8cdb3167-af19-4d26-9d0d-54d2581d8b86&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true&pageName=ReportSection"
     },
     {
       "nombre": "INCIDENETES WAF",
