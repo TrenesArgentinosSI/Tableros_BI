@@ -1,5 +1,5 @@
 {
-  "version": "2.1",
+  "version": "2.2",
   "pc": "PC de Gerencia",
   "tiempo": 300,
   "urls": [
@@ -34,19 +34,15 @@
     },
     {
       "nombre": "INDICADORES DE GESTION PRD - DOTACION AL DIA ACTUAL",
-      "url": "https://app.powerbi.com/reportEmbed?reportId=6c8140ab-f038-4a86-b56c-4327ccecd15d&groupId=11fb499e-4956-4ae0-b5e3-966f0f2dd308&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true&pageName=ReportSection1554dd7e053a66979e0b"
+      "url": "https://app.powerbi.com/reportEmbed?reportId=8922514e-cf63-4335-9eaa-750af8b88bbf&groupId=11fb499e-4956-4ae0-b5e3-966f0f2dd308&autoAuth=true&filterPaneEnabled=false&navContentPaneEnabled=false&pageName=ReportSection1554dd7e053a66979e0b"
     },
     {
       "nombre": "INDICADORES DE GESTION PRD - ALTAS Y BAJAS",
-      "url": "https://app.powerbi.com/reportEmbed?reportId=6c8140ab-f038-4a86-b56c-4327ccecd15d&groupId=11fb499e-4956-4ae0-b5e3-966f0f2dd308&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true&pageName=44f3f26abe0a6fb92b24"
+      "url": "https://app.powerbi.com/reportEmbed?reportId=8922514e-cf63-4335-9eaa-750af8b88bbf&groupId=11fb499e-4956-4ae0-b5e3-966f0f2dd308&autoAuth=true&filterPaneEnabled=false&navContentPaneEnabled=false&pageName=44f3f26abe0a6fb92b24"
     },
     {
       "nombre": "INDICADORES DE GESTION PRD - EDAD Y SEXO",
-      "url": "https://app.powerbi.com/reportEmbed?reportId=6c8140ab-f038-4a86-b56c-4327ccecd15d&groupId=11fb499e-4956-4ae0-b5e3-966f0f2dd308&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true&pageName=ReportSectionf9fe292b4b0b2244a793"
-    },
-    {
-      "nombre": "INDICADORES DE GESTION PRD - ANTIGUEDAD",
-      "url": "https://app.powerbi.com/reportEmbed?reportId=6c8140ab-f038-4a86-b56c-4327ccecd15d&groupId=11fb499e-4956-4ae0-b5e3-966f0f2dd308&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true&pageName=ReportSection7b34db0f300b875c8c1b"
+      "url": "https://app.powerbi.com/reportEmbed?reportId=8922514e-cf63-4335-9eaa-750af8b88bbf&groupId=11fb499e-4956-4ae0-b5e3-966f0f2dd308&autoAuth=true&filterPaneEnabled=false&navContentPaneEnabled=false&pageName=ReportSectionf9fe292b4b0b2244a793"
     },
     {
       "nombre": "REPORTE DOTACION Y AUSENTISMO - DOTACION",
