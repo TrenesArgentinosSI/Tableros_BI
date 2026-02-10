@@ -1,7 +1,7 @@
 {
-  "version": "2.2",
+  "version": "2.3",
   "pc": "PC de Gerencia",
-  "tiempo": 300,
+  "tiempo": 150,
   "urls": [
     {
       "nombre": "MDA Promedios",
