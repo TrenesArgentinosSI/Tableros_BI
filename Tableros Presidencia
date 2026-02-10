@@ -1,7 +1,7 @@
 {
-  "version": "2.2",
+  "version": "2.3",
   "pc": "PC de Presidencia 1",
-  "tiempo": 300,
+  "tiempo": 120,
   "urls": [
     {
       "nombre": "Recaudaciones - Ventas ",
