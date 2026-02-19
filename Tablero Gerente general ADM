@@ -1,0 +1,44 @@
+{
+  "version": "1.0",
+  "pc": "PC de Gerente general ADM",
+  "tiempo": 120,
+  "urls": [
+    {
+      "nombre": "Recaudaciones - Ventas ",
+      "url": "https://app.powerbi.com/reportEmbed?reportId=8ad10dfd-a0a2-45fb-b00f-521967f9e8bf&groupId=11fb499e-4956-4ae0-b5e3-966f0f2dd308&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true&pageName=2b428bc2bff00874c887"
+    },
+ {
+      "nombre": "Recaudaciones - Pasajeros ",
+      "url": "https://app.powerbi.com/reportEmbed?reportId=8ad10dfd-a0a2-45fb-b00f-521967f9e8bf&groupId=11fb499e-4956-4ae0-b5e3-966f0f2dd308&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true&pageName=ba6bceab1e0ec78326a5"
+    },
+ {
+      "nombre": "Recaudaciones - Tarifas ",
+      "url": "https://app.powerbi.com/reportEmbed?reportId=8ad10dfd-a0a2-45fb-b00f-521967f9e8bf&groupId=11fb499e-4956-4ae0-b5e3-966f0f2dd308&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true&pageName=28e4d0fb9574dfc91dc0"
+    },
+   {
+      "nombre": "DOTACION ACTUAL",
+      "url": "https://app.powerbi.com/reportEmbed?reportId=8922514e-cf63-4335-9eaa-750af8b88bbf&groupId=11fb499e-4956-4ae0-b5e3-966f0f2dd308&autoAuth=true&filterPaneEnabled=false&navContentPaneEnabled=false&pageName=ReportSection1554dd7e053a66979e0b"
+    },
+    {
+      "nombre": "ALTAS Y BAJAS",
+      "url": "https://app.powerbi.com/reportEmbed?reportId=8922514e-cf63-4335-9eaa-750af8b88bbf&groupId=11fb499e-4956-4ae0-b5e3-966f0f2dd308&autoAuth=true&filterPaneEnabled=false&navContentPaneEnabled=false&pageName=44f3f26abe0a6fb92b24"
+    },
+    {
+      "nombre": "EDAD Y SEXO",
+      "url": "https://app.powerbi.com/reportEmbed?reportId=8922514e-cf63-4335-9eaa-750af8b88bbf&groupId=11fb499e-4956-4ae0-b5e3-966f0f2dd308&autoAuth=true&filterPaneEnabled=false&navContentPaneEnabled=false&pageName=ReportSectionf9fe292b4b0b2244a793"
+    },
+    {
+      "nombre": "Bajas presidencia",
+      "url": "https://app.powerbi.com/reportEmbed?reportId=8922514e-cf63-4335-9eaa-750af8b88bbf&groupId=11fb499e-4956-4ae0-b5e3-966f0f2dd308&autoAuth=true&filterPaneEnabled=false&navContentPaneEnabled=false&pageName=625302a703df537f12da"
+    },
+
+    {
+      "nombre": "Bajas por línea",
+      "url": "https://app.powerbi.com/reportEmbed?reportId=8922514e-cf63-4335-9eaa-750af8b88bbf&groupId=11fb499e-4956-4ae0-b5e3-966f0f2dd308&autoAuth=true&filterPaneEnabled=false&navContentPaneEnabled=false&pageName=ad04b27ec8e44a7bba14"
+    },
+    {
+      "nombre": "Bajas por tipo",
+      "url": "https://app.powerbi.com/reportEmbed?reportId=8922514e-cf63-4335-9eaa-750af8b88bbf&groupId=11fb499e-4956-4ae0-b5e3-966f0f2dd308&autoAuth=true&filterPaneEnabled=false&navContentPaneEnabled=false&pageName=7c2f72114a8157d90890"
+    }
+  ]
+}
