@@ -1,17 +1,13 @@
 {
-  "version": "2.3",
+  "version": "2.4",
   "pc": "PC de Gerencia",
   "tiempo": 150,
   "urls": [
-    {
-      "nombre": "MDA Promedios",
-      "url": "https://app.powerbi.com/reportEmbed?reportId=95b7da4d-efda-405c-992f-3427a1207adf&groupId=a29be703-4cea-480d-8877-ea2c4734f4f4&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true&pageName=31c06358870385ddc6ca"
-    },
+  
     {
       "nombre": "Recaudaciones - Ventas",
       "url": "https://app.powerbi.com/reportEmbed?reportId=8ad10dfd-a0a2-45fb-b00f-521967f9e8bf&groupId=11fb499e-4956-4ae0-b5e3-966f0f2dd308&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true&pageName=2b428bc2bff00874c887"
     },
-
  {
       "nombre": "Recaudaciones - Pasajeros",
       "url": "https://app.powerbi.com/reportEmbed?reportId=8ad10dfd-a0a2-45fb-b00f-521967f9e8bf&groupId=11fb499e-4956-4ae0-b5e3-966f0f2dd308&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true&pageName=ba6bceab1e0ec78326a5"
@@ -20,18 +16,7 @@
       "nombre": "Recaudaciones - Tarifas",
       "url": "https://app.powerbi.com/reportEmbed?reportId=8ad10dfd-a0a2-45fb-b00f-521967f9e8bf&groupId=11fb499e-4956-4ae0-b5e3-966f0f2dd308&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true&pageName=28e4d0fb9574dfc91dc0"
     },
-    {
-      "nombre": "MDA Areas",
-      "url": "https://app.powerbi.com/reportEmbed?reportId=95b7da4d-efda-405c-992f-3427a1207adf&groupId=a29be703-4cea-480d-8877-ea2c4734f4f4&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true&pageName=7733e4cc8420b26d7500"
-    },
-    {
-      "nombre": "MDA PROMEDIOS FILTROS",
-      "url": "https://app.powerbi.com/reportEmbed?reportId=95b7da4d-efda-405c-992f-3427a1207adf&groupId=a29be703-4cea-480d-8877-ea2c4734f4f4&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true&pageName=399dadf0d240005ab79e"
-    },
-    {
-      "nombre": "MDA Estado General",
-      "url": "https://app.powerbi.com/reportEmbed?reportId=95b7da4d-efda-405c-992f-3427a1207adf&groupId=a29be703-4cea-480d-8877-ea2c4734f4f4&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true&pageName=ReportSection245c9cb81305855023e3"
-    },
+    
     {
       "nombre": "INDICADORES DE GESTION PRD - DOTACION AL DIA ACTUAL",
       "url": "https://app.powerbi.com/reportEmbed?reportId=8922514e-cf63-4335-9eaa-750af8b88bbf&groupId=11fb499e-4956-4ae0-b5e3-966f0f2dd308&autoAuth=true&filterPaneEnabled=false&navContentPaneEnabled=false&pageName=ReportSection1554dd7e053a66979e0b"
@@ -46,11 +31,7 @@
     },
     {
       "nombre": "REPORTE DOTACION Y AUSENTISMO - DOTACION",
-      "url": "https://app.powerbi.com/reportEmbed?reportId=23c0d48c-f1a9-4df8-80cf-a3924bcb0d8b&groupId=647f43d9-54a1-47ee-9e78-604bb84ac9ff&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true&pageName=062ffe712aa4bd8b1c04"
-    },
-    {
-      "nombre": "REPORTE DOTACION Y AUSENTISMO - AUSENTISMO",
-      "url": "https://app.powerbi.com/reportEmbed?reportId=23c0d48c-f1a9-4df8-80cf-a3924bcb0d8b&groupId=647f43d9-54a1-47ee-9e78-604bb84ac9ff&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true&pageName=c478fb2092d06e1a7397"
+      "url": "https://app.powerbi.com/reportEmbed?reportId=8922514e-cf63-4335-9eaa-750af8b88bbf&groupId=11fb499e-4956-4ae0-b5e3-966f0f2dd308&autoAuth=true&filterPaneEnabled=false&navContentPaneEnabled=false&pageName=ReportSection1554dd7e053a66979e0b"
     }
   ]
 }
