@@ -1,9 +1,13 @@
 {
-  "version": "2.4",
+  "version": "2.5",
   "pc": "PC de Gerencia",
   "tiempo": 150,
   "urls": [
-  
+
+    {
+      "nombre": "Reporte ODP",
+      "url": "https://app.powerbi.com/reportEmbed?reportId=4ccc7f08-5c44-4b75-bdd1-266316252774&groupId=684d120e-3106-4b5e-b0b3-16d46dffd8aa&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true"
+    }, 
     {
       "nombre": "Recaudaciones - Ventas",
       "url": "https://app.powerbi.com/reportEmbed?reportId=8ad10dfd-a0a2-45fb-b00f-521967f9e8bf&groupId=11fb499e-4956-4ae0-b5e3-966f0f2dd308&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true&pageName=2b428bc2bff00874c887"
