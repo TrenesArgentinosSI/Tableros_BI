@@ -1,9 +1,12 @@
 {
-  "version": "2.0",
+  "version": "2.1",
   "pc": "PC de SI",
   "tiempo": 150,
   "urls": [
-
+    {
+      "nombre": "Reporte Tableros PBI",
+      "url": "https://app.powerbi.com/reportEmbed?reportId=b0053174-0149-438d-a86c-0a438c9f8c22&groupId=a4eb3a23-ec65-4113-b842-1832cf87e575&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true&pageName=bcac9e67cee43467c2a4"
+    },
     {
       "nombre": "Reporte ODP",
       "url": "https://app.powerbi.com/reportEmbed?reportId=4ccc7f08-5c44-4b75-bdd1-266316252774&groupId=684d120e-3106-4b5e-b0b3-16d46dffd8aa&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true"
