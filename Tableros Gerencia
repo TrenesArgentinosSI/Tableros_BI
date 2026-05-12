@@ -1,8 +1,28 @@
 {
-  "version": "2.6",
+  "version": "2.7",
   "pc": "PC de Gerencia",
   "tiempo": 150,
   "urls": [
+   {
+      "nombre": "Ingresos y Egresos sin Amortizaciones",
+      "url": "https://app.powerbi.com/reportEmbed?reportId=3f554feb-ca2d-4ba7-bf0f-8fa34da7470c&groupId=5320e04e-ab1f-4e12-9ab3-230f02c65d17&autoAuth=true&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&filterPaneEnabled=false&navContentPaneEnabled=false&hideNavigation=true&pageName=f19f0d62a63d4e262ae7"
+    },
+    {
+      "nombre": "Ingresos y Egresos",
+      "url": "https://app.powerbi.com/reportEmbed?reportId=3f554feb-ca2d-4ba7-bf0f-8fa34da7470c&groupId=5320e04e-ab1f-4e12-9ab3-230f02c65d17&autoAuth=true&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&filterPaneEnabled=false&navContentPaneEnabled=false&hideNavigation=true&pageName=f13f95c3a8d83ed07e39"
+    },
+    {
+      "nombre": "Ingresos y Egresos",
+      "url": "https://app.powerbi.com/reportEmbed?reportId=3f554feb-ca2d-4ba7-bf0f-8fa34da7470c&groupId=5320e04e-ab1f-4e12-9ab3-230f02c65d17&autoAuth=true&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&filterPaneEnabled=false&navContentPaneEnabled=false&hideNavigation=true&pageName=8fbaeaca357f7abb4494"
+    },
+    {
+      "nombre": "Egresos por mes",
+      "url": "https://app.powerbi.com/groups/5320e04e-ab1f-4e12-9ab3-230f02c65d17/reports/3f554feb-ca2d-4ba7-bf0f-8fa34da7470c/53c4adbd66803ac5b3de?ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&experience=power-bi"
+    },
+    {
+      "nombre": "Interanual",
+      "url": "https://app.powerbi.com/reportEmbed?reportId=3f554feb-ca2d-4ba7-bf0f-8fa34da7470c&groupId=5320e04e-ab1f-4e12-9ab3-230f02c65d17&autoAuth=true&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&filterPaneEnabled=false&navContentPaneEnabled=false&hideNavigation=true&pageName=41d8912f07468b6bc4fb"
+    },
     {
       "nombre": "Reporte Tableros PBI",
       "url": "https://app.powerbi.com/reportEmbed?reportId=b0053174-0149-438d-a86c-0a438c9f8c22&groupId=a4eb3a23-ec65-4113-b842-1832cf87e575&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true&pageName=bcac9e67cee43467c2a4"
