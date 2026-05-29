@@ -1,11 +1,11 @@
 {
-  "version": "2.6",
+  "version": "2.7",
   "pc": "PC de Presidencia 1",
   "tiempo": 120,
   "urls": [
     {
       "nombre": "Ingresos y egresos ",
-      "url": "https://app.powerbi.com/reportEmbed?reportId=8ad10dfd-a0a2-45fb-b00f-521967f9e8bf&groupId=11fb499e-4956-4ae0-b5e3-966f0f2dd308&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true&pageName=2b428bc2bff00874c887"
+      "url": "https://app.powerbi.com/reportEmbed?reportId=54fb1968-323c-4de0-8258-770aab5936aa&groupId=11fb499e-4956-4ae0-b5e3-966f0f2dd308&autoAuth=true&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&filterPaneEnabled=false&navContentPaneEnabled=false&hideNavigation=true&pageName=f19f0d62a63d4e262ae7"
     },
 
     {
