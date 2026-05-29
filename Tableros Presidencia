@@ -1,5 +1,5 @@
 {
-  "version": "2.5",
+  "version": "2.6",
   "pc": "PC de Presidencia 1",
   "tiempo": 120,
   "urls": [
@@ -13,15 +13,15 @@
       "url": "https://app.powerbi.com/reportEmbed?reportId=54fb1968-323c-4de0-8258-770aab5936aa&groupId=11fb499e-4956-4ae0-b5e3-966f0f2dd308&autoAuth=true&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&filterPaneEnabled=false&navContentPaneEnabled=false&hideNavigation=true&pageName=f13f95c3a8d83ed07e39"
     },
     {
-      "Ingresos x mes",
+      "nombre": "Ingresos x mes",
       "url": "https://app.powerbi.com/reportEmbed?reportId=54fb1968-323c-4de0-8258-770aab5936aa&groupId=11fb499e-4956-4ae0-b5e3-966f0f2dd308&autoAuth=true&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&filterPaneEnabled=false&navContentPaneEnabled=false&hideNavigation=true&pageName=8fbaeaca357f7abb4494"
     },
     {
-      "Egresos x mes",
+      "nombre": "Egresos x mes",
       "url": "https://app.powerbi.com/reportEmbed?reportId=54fb1968-323c-4de0-8258-770aab5936aa&groupId=11fb499e-4956-4ae0-b5e3-966f0f2dd308&autoAuth=true&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&filterPaneEnabled=false&navContentPaneEnabled=false&hideNavigation=true&pageName=53c4adbd66803ac5b3de"
     },
     {
-      "Ingresos y egresos x mes",
+      "nombre": "Ingresos y egresos x mes",
       "url": "https://app.powerbi.com/reportEmbed?reportId=54fb1968-323c-4de0-8258-770aab5936aa&groupId=11fb499e-4956-4ae0-b5e3-966f0f2dd308&autoAuth=true&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&filterPaneEnabled=false&navContentPaneEnabled=false&hideNavigation=true&pageName=41d8912f07468b6bc4fb"
     },
     {
