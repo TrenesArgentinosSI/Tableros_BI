@@ -1,5 +1,5 @@
 {
-  "version": "2.7",
+  "version": "2.8",
   "pc": "PC de Gerencia",
   "tiempo": 150,
   "urls": [
@@ -17,7 +17,7 @@
     },
     {
       "nombre": "Egresos por mes",
-      "url": "https://app.powerbi.com/groups/5320e04e-ab1f-4e12-9ab3-230f02c65d17/reports/3f554feb-ca2d-4ba7-bf0f-8fa34da7470c/53c4adbd66803ac5b3de?ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&experience=power-bi"
+      "url": "https://app.powerbi.com/reportEmbed?reportId=3f554feb-ca2d-4ba7-bf0f-8fa34da7470c&groupId=5320e04e-ab1f-4e12-9ab3-230f02c65d17&autoAuth=true&ctid=9d6555ab-db4f-4ab0-8e7e-39efc4dc6730&pageName=53c4adbd66803ac5b3de&filterPaneEnabled=false&navContentPaneEnabled=false&hideNavigation=true"
     },
     {
       "nombre": "Interanual",
