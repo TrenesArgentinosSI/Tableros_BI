@@ -1,6 +1,5 @@
-```json
 {
-  "version": "1.1",
+  "version": "1.2",
   "pc": "PC de Gerencia general Operativa 1",
   "tiempo": 240,
   "urls": [
