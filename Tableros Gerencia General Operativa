@@ -1,30 +1,32 @@
+```json
 {
-  "version": "1.0",
+  "version": "1.1",
   "pc": "PC de Gerencia general Operativa 1",
   "tiempo": 240,
   "urls": [
     {
-      "nombre": "Líneas Dotación- Evolución",
-      "url": "https://app.powerbi.com/reportEmbed?reportId=ee13dbba-3719-4d4c-982b-b83759348327&groupId=a265d556-4a31-4360-9ad1-a80e9d30e8e8&autoAuth=true&pageName=e8408d2b09f9238f82ed&navContentPaneEnabled=false&filterPaneEnabled=false"
+      "nombre": "Líneas Dotación - Evolución",
+      "url": "https://app.powerbi.com/reportEmbed?reportId=ee13dbba-3719-4d4c-982b-b83759348327&groupId=a265d556-4a31-4360-9ad1-a80e9d30e8e8&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true&pageName=e8408d2b09f9238f82ed"
     },
- {
-      "nombre": "Líneas - bajas ",
+    {
+      "nombre": "Líneas - Bajas",
       "url": "https://app.powerbi.com/reportEmbed?reportId=ee13dbba-3719-4d4c-982b-b83759348327&groupId=a265d556-4a31-4360-9ad1-a80e9d30e8e8&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true&pageName=b0625bba4f65e18c10b7"
     },
- {
-      "nombre": "Líneas – ausentismo ",
+    {
+      "nombre": "Líneas - Ausentismo",
       "url": "https://app.powerbi.com/reportEmbed?reportId=ee13dbba-3719-4d4c-982b-b83759348327&groupId=a265d556-4a31-4360-9ad1-a80e9d30e8e8&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true&pageName=170879e0774bfc0ec657"
     },
-   {
-      "nombre": "Líneas – Horas Extras",
+    {
+      "nombre": "Líneas - Horas Extras",
       "url": "https://app.powerbi.com/reportEmbed?reportId=ee13dbba-3719-4d4c-982b-b83759348327&groupId=a265d556-4a31-4360-9ad1-a80e9d30e8e8&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true&pageName=13c1019fb2025065c8af"
     },
     {
-      "nombre": "Líneas –Mayor Función",
+      "nombre": "Líneas - Mayor Función",
       "url": "https://app.powerbi.com/reportEmbed?reportId=ee13dbba-3719-4d4c-982b-b83759348327&groupId=a265d556-4a31-4360-9ad1-a80e9d30e8e8&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true&pageName=21b9306c65049152e323"
     },
     {
-      "nombre": "Líneas – Sanciones",
+      "nombre": "Líneas - Sanciones",
       "url": "https://app.powerbi.com/reportEmbed?reportId=ee13dbba-3719-4d4c-982b-b83759348327&groupId=a265d556-4a31-4360-9ad1-a80e9d30e8e8&autoAuth=true&navContentPaneEnabled=false&filterPaneEnabled=false&hideNavigation=true&pageName=d3de2d7002230005ba1b"
+    }
   ]
 }
